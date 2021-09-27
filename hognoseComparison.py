@@ -25,6 +25,7 @@ def gotoSnakeWithTheseTraits(driver,traits):
     ## need to get traits into a list cause i think its astring rn
     morphHolder = ""
     traitList = []
+    stopper = 0
     for w in range(len(traits)):
         # print(traits[w])
         # print("converting traits to list")
@@ -39,11 +40,18 @@ def gotoSnakeWithTheseTraits(driver,traits):
                 # print("last two chars were spaces so adding morphHolder to the traitlist")
                 traitList.append(morphHolder)
                 morphHolder = ""
+                stopper = 1
+            if " " in morphHolder and stopper != 1:
+                #print("was a space in morphholder and a space again so adding morphHolder to the traitlist")
+                traitList.append(morphHolder)
+                morphHolder = ""
+                stopper = 0
             else:
                 # print("adding string to morphholder")
                 morphHolder += traits[w]
+    if '' in traitList:
+        traitList.remove('')
     print("going to snake with these traits: " + str(traitList))
-    print(len(traitList))
     for x in traitList:
         morphInputBoxElement = driver.find_element(By.CSS_SELECTOR,morphInputBoxCssSelector)
         # print(x)
@@ -61,6 +69,7 @@ def gotoSnakeWithTheseTraits(driver,traits):
     maxGenesNumberElement.click()
     goFilterButtonXPath = "//*[@id='adv-search-btn']"
     goFilterButtonElement = driver.find_element_by_xpath(goFilterButtonXPath)
+    time.sleep(4)
     goFilterButtonElement.click()
     
 
@@ -103,25 +112,33 @@ def grabSnakeComboData(driver):
     #snakeChildren = [likelieness morph avg price]
     likelienessElementList = driver.find_elements(By.CLASS_NAME, "prob")
     genesElementList = driver.find_elements(By.CLASS_NAME, "genes")
+    snakeComboUrl = driver.current_url
     weightedTotalReturn = 0
+    #print("length of likelienesselementlist: " + str(len(likelienessElementList)))
     for x in range(1,len(likelienessElementList)):
         if x < len(likelienessElementList):
+            #starts at the list of children made from parents
+            if x != 1:
+                print("wasnt at the snake combo page so going there now")
+                driver.get(snakeComboUrl)
             likelienessElementList = driver.find_elements(By.CLASS_NAME, "prob")
             genesElementList = driver.find_elements(By.CLASS_NAME, "genes")
             snakeChildren.append([likelienessElementList[x].text.replace("%",""),list(genesElementList[x].text.replace("100%","").replace("50%",""))])
+            time.sleep(4)
             snakeChildPrice = findAvgPriceOfSnake(driver,snakeChildren[x-1])
+            #print("what is showing when this pops up?")
+            time.sleep(3)
             snakeChildren[x-1].append(snakeChildPrice)
             #now we have snakes with avg prices. add themn all up weighted to get score
-            print("snake child" + str(snakeChildren[x-1][0]))
+            #print("snake child likelieness " + str(snakeChildren[x-1][0]))
             if snakeChildren[x-1][0] == "":
                 print("no snakes found for that morph.")
                 weightedTotalReturn = 0
             else:
                 weightedTotalReturn += float(snakeChildren[x-1][0]) * float(snakeChildren[x-1][2])
-    returner = [snakeChildren,weightedTotalReturn]
-    print("snake children " + str(snakeChildren))
+    #print("snake children " + str(snakeChildren))
     traits = snakeChildren[0][1]
-    print(traits)
+    #print(traits)
     morphHolder = ""
     traitList = []
     for w in range(len(traits)):
@@ -141,6 +158,8 @@ def grabSnakeComboData(driver):
             else:
                 # print("adding string to morphholder")
                 morphHolder += traits[w]
+    snakeChildren[0][1] = traitList
+    returner = [snakeChildren,weightedTotalReturn]
     print(traitList)    
     return returner
     
@@ -175,10 +194,12 @@ def compareSnakes(driver, snakeMFrame, snakeFFrame, myId):
     calculateButtonCssSelector = ".tooltip-wrapper > button:nth-child(1)"
     calculateButtonElement = driver.find_element(By.CSS_SELECTOR,calculateButtonCssSelector)
     calculateButtonElement.click()
+    time.sleep(4)
     results = grabSnakeComboData(driver)
     d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]]}
     returningDataFrame = df(data = d)
-    print(returningDataFrame)
+    print("printing children")
+    print(returningDataFrame["children"].head())
     return returningDataFrame
 
 
@@ -198,5 +219,6 @@ def main():
             resultsDataFrame = resultsDataFrame.append(resultDataFrame)
             theId += 1
     resultsDataFrame = resultsDataFrame.sort_values(by = ["score"])
+    print("printingReturndataframe")
     print(resultsDataFrame.head(n=10))
 main()
