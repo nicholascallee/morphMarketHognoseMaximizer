@@ -7,22 +7,59 @@ import csv
 import time
 from selenium.common.exceptions import StaleElementReferenceException
 
-def gotoSnakeWithTheseTraits(driver,traits):
-    #go to morph market and filter on male or female snakes for the particular morph passed. return the driver
-    time.sleep(1)
-    driver.get("https://www.morphmarket.com/us/c/reptiles/colubrids/western-hognose?sort=nfs&has_id=1")
-    filtersCssSelector = ".layout-toggle-right > a:nth-child(1)"
-    time.sleep(1)
-    filterElement = driver.find_element(By.CSS_SELECTOR, filtersCssSelector)
-    time.sleep(1)
-    try:
-        filterElement.click()
-    except StaleElementReferenceException:
-        print("couldnt find filter by css selector trying xpath")    
-        filterXpath = "/html/body/div[3]/div[2]/div/div[1]/div[2]/span/a[1]"
-        filterXpathElement = driver.find_element_by_xpath(filterXpath)
-    morphInputBoxCssSelector = "div.row:nth-child(10) > div:nth-child(2) > input:nth-child(3)"
-    ## need to get traits into a list cause i think its astring rn
+
+
+def averageSnakePrices(snakePrices):
+    if len(snakePrices) > 0:
+        adder = 0
+        length = 0
+        for x in snakePrices:
+            adder  += int(x)
+            length += 1
+        avg = adder/length
+        return avg
+    else:
+        return 0
+
+def grabSnakePrice(driver):
+    return
+
+
+
+def getAllSnakesWithTheseTraits(traitList):
+    #need to open csv and grab snakes
+    #then compare with traitlist and return the snakes with those traits both male and female
+    maleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportm', names = ["morphs","cost","link"])
+    femaleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportf', names = ["morphs","cost","link"])
+    #print(maleSnakeDataFrame["morphs"])
+    print("looking for snakes in male file of this morph " + str(traitList))
+    foundSnakes = []
+    for morph in maleSnakeDataFrame["morphs"]:
+        count = 0
+        if morph == traitList:
+            print("found a snake with this morph " +traitList + " adding to the pile")
+            print(maleSnakeDataFrame[count])
+            foundSnakes.append(maleSnakeDataFrame[count])
+        count += 1
+    for morph in femaleSnakeDataFrame["morphs"]:
+        count = 0
+        if morph == traitList:
+            print("found a snake with this morph " +traitList + " adding to the pile")
+            print(femaleSnakeDataFrame[count])
+            foundSnakes.append(femaleSnakeDataFrame[count])
+        count += 1
+    if len(foundSnakes) == 0:
+        print("no snakes of that morph type found")
+        return []
+    else:
+        print("printing cost for all found snakes")
+        print(foundSnakes[0][["cost"]])
+        print(type(foundSnakes[0]["cost"]))
+    
+    
+
+def findSnakeWithTheseTraitsInTheDataFrame(driver, traits, snakeMFrame, snakeFFrame):
+    #print(traits)
     morphHolder = ""
     traitList = []
     stopper = 0
@@ -51,61 +88,28 @@ def gotoSnakeWithTheseTraits(driver,traits):
                 morphHolder += traits[w]
     if '' in traitList:
         traitList.remove('')
-    print("going to snake with these traits: " + str(traitList))
-    for x in traitList:
-        morphInputBoxElement = driver.find_element(By.CSS_SELECTOR,morphInputBoxCssSelector)
-        # print(x)
-        morphInputBoxElement.send_keys(x)
-        morphInputBoxElement.send_keys(Keys.TAB)
-    maxGenesElement = driver.find_element(By.CSS_SELECTOR,"#id_max_genes")
-    minGenesElement = driver.find_element(By.CSS_SELECTOR,"#id_min_genes")
-    minGenesNumberVar = "#id_min_genes > option:nth-child("+str(len(traitList)+1)+")"
-    MaxGenesNumberVar = "#id_max_genes > option:nth-child("+str(len(traitList)+1)+")"
-    minGenesElement.click()
-    minGenesNumberElement = driver.find_element(By.CSS_SELECTOR,minGenesNumberVar)
-    minGenesNumberElement.click()
-    maxGenesElement.click()
-    maxGenesNumberElement = driver.find_element(By.CSS_SELECTOR,MaxGenesNumberVar)
-    maxGenesNumberElement.click()
-    goFilterButtonXPath = "//*[@id='adv-search-btn']"
-    goFilterButtonElement = driver.find_element_by_xpath(goFilterButtonXPath)
-    time.sleep(4)
-    goFilterButtonElement.click()
+    returnedSnakes = getAllSnakesWithTheseTraits(traitList)
+    if returnedSnakes == []:
+        return []
+    else:
+        return returnedSnakes
     
 
-def averageSnakePrices(snakePrices):
-    if len(snakePrices) > 0:
-        adder = 0
-        length = 0
-        for x in snakePrices:
-            adder  += int(x)
-            length += 1
-        avg = adder/length
-        return avg
-    else:
-        return 0
-
-def grabSnakePrice(driver):
-    return
-
-def goThroughEachSnakeWithSpecificTraits(driver):
-    snakePrices = []
-    for x in range(len(driver.find_elements(By.CLASS_NAME,"snake-thumb"))):
-        snakeDriverElements = driver.find_elements(By.CLASS_NAME,"snake-thumb")
-        snakeDriverElements[x].click()
-        snakePrices.append(grabSnakePrice(driver))
-        print(snakePrices[x])
-        driver.back()
-    return snakePrices
-
-def findAvgPriceOfSnake(driver,snake):
+def findAvgPriceOfSnake(driver,snake, snakeMFrame, snakeFFrame):
+    #instead of trying to load a fuck ton of pages, just look in the list of snakes we already made dumbass
     traits = snake[1]
-    gotoSnakeWithTheseTraits(driver,traits)
-    pricesOfSpecificSnake = goThroughEachSnakeWithSpecificTraits(driver)
-    avg = averageSnakePrices(pricesOfSpecificSnake)
-    return avg
+    snakesWithTheseParticularTraits = findSnakeWithTheseTraitsInTheDataFrame(driver, snake[1], snakeMFrame, snakeFFrame)
+    if snakesWithTheseParticularTraits == []:
+        return 0
+    else:
+        #pricesOfSpecificSnake = 
+        avg = averageSnakePrices(pricesOfSpecificSnake)
+    #gotoSnakeWithTheseTraits(driver,traits)
+    #pricesOfSpecificSnake = goThroughEachSnakeWithSpecificTraits(driver)
+    #avg = averageSnakePrices(pricesOfSpecificSnake)
+    #return avg
 
-def grabSnakeComboData(driver):
+def grabSnakeComboData(driver, snakeMFrame, snakeFFrame):
     print("starting grabsnakecomboData")
     returner = []
     snakeChildren = []
@@ -123,16 +127,15 @@ def grabSnakeComboData(driver):
                 driver.get(snakeComboUrl)
             likelienessElementList = driver.find_elements(By.CLASS_NAME, "prob")
             genesElementList = driver.find_elements(By.CLASS_NAME, "genes")
-            snakeChildren.append([likelienessElementList[x].text.replace("%",""),list(genesElementList[x].text.replace("100%","").replace("50%",""))])
+            snakeChildren.append([likelienessElementList[x].text.replace("%",""),list(genesElementList[x].text.replace("100%","").replace("50%","").replace(" 66%",""))])
             time.sleep(4)
-            snakeChildPrice = findAvgPriceOfSnake(driver,snakeChildren[x-1])
+            snakeChildPrice = findAvgPriceOfSnake(driver,snakeChildren[x-1], snakeMFrame, snakeFFrame)
             #print("what is showing when this pops up?")
             time.sleep(3)
             snakeChildren[x-1].append(snakeChildPrice)
             #now we have snakes with avg prices. add themn all up weighted to get score
             #print("snake child likelieness " + str(snakeChildren[x-1][0]))
             if snakeChildren[x-1][0] == "":
-                print("no snakes found for that morph.")
                 weightedTotalReturn = 0
             else:
                 weightedTotalReturn += float(snakeChildren[x-1][0]) * float(snakeChildren[x-1][2])
@@ -152,7 +155,7 @@ def grabSnakeComboData(driver):
                 traitList.append(morphHolder)
         if traits[w] == " ":
             if traits[w-1] == " ":
-                # print("last two chars were spaces so adding morphHolder to the traitlist")
+                print("last two chars were spaces so adding morphHolder to the traitlist")
                 traitList.append(morphHolder)
                 morphHolder = ""
             else:
@@ -160,7 +163,7 @@ def grabSnakeComboData(driver):
                 morphHolder += traits[w]
     snakeChildren[0][1] = traitList
     returner = [snakeChildren,weightedTotalReturn]
-    print(traitList)    
+    #print(traitList)    
     return returner
     
 
@@ -195,11 +198,11 @@ def compareSnakes(driver, snakeMFrame, snakeFFrame, myId):
     calculateButtonElement = driver.find_element(By.CSS_SELECTOR,calculateButtonCssSelector)
     calculateButtonElement.click()
     time.sleep(4)
-    results = grabSnakeComboData(driver)
+    results = grabSnakeComboData(driver, snakeMFrame, snakeFFrame)
     d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]]}
     returningDataFrame = df(data = d)
-    print("printing children")
-    print(returningDataFrame["children"].head())
+    #print("printing children")
+    #print(returningDataFrame["children"].head())
     return returningDataFrame
 
 
