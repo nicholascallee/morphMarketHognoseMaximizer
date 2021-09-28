@@ -8,6 +8,7 @@ import time
 from selenium.common.exceptions import StaleElementReferenceException
 import os.path
 from os import path
+import sys
 
 
 def averageSnakePrices(snakePrices):
@@ -28,30 +29,62 @@ def grabSnakePrice(driver):
 def morphToList(stringOfMorphs):
     if stringOfMorphs[0] == " ":
         stringOfMorphs = StringOfMorphs[1:]
-    stringOfMorphs = stringOfMorphs.replace("['","").replace("']","").replace("100% ","").replace("', '"," ")
+    stringOfMorphs = stringOfMorphs.replace("['","").replace("']","").replace("100% ","").replace("', '"," ").replace(" Pos","").replace("Pos","").replace("Normal","").replace("'', ","")
     stringOfMorphsFixed = fixGeneString(stringOfMorphs)
     return stringOfMorphsFixed
 
+def isItAfterAlphebetically(charOne,charTwo):
+    if charOne <= charTwo:
+        return True
+    else:
+        return False
+
+def tfOfIfContainsThisMorph(sliceOfMorphs,morph):
+    for x in sliceOfMorphs:
+        if (morph in x):
+            return True:
+        else:
+            return False:
+
+def createNewColumns(snakeDataFrame):
+    for x in snakeDataFrame["morphs"]:
+        morphList = morphToList(x)
+        for x in morphList:
+            if x:
+                snakeDataFrame["YN" + str(x)] = snakeDataFrame["morphs"].apply(tfOfIfContainsThisMorph(x))
+                
+    print(snakeDataFrame.columns)
+    #grab list of all possible morphs
+    #for each morph
+        #create new column called yn<morphHere> and make them yes no based on if the morphs col contains that morph
+    return snakeDataFrame
 
 def getAllSnakesWithTheseTraits(childTraitList):
     #need to open csv and grab snakes
     #then compare with traitlist and return the snakes with those traits both male and female
     maleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportm', names = ["morphs","cost","link"])
     femaleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportf', names = ["morphs","cost","link"])
-    #print(maleSnakeDataFrame["morphs"])
+    #create new columns like ynAnaconda and ynArctic
+    newMaleSnakeDataFrame = createNewColumns(maleSnakeDataFrame)
+    newFemaleSnakeDataFrame = createNewColumns(femaleSnakeDataFrame)
     print("looking for snakes in male file of this morph " + str(childTraitList))
     foundSnakes = []
     fixedMorphs = []
     #print("morph--+ " + maleSnakeDataFrame["morphs"])
     maleSnakeMorphs = maleSnakeDataFrame["morphs"].tolist()
+    femaleSnakeMorphs = femaleSnakeDataFrame["morphs"].tolist()
     #go thru all male snakes
+    timeNow = time.time()
     print("starting to check the boys")
     for x in range(len(maleSnakeMorphs)):
+        timeNow = time.time()
         
-        
-        #fix the morphs from the male snake
         #print(str(maleSnakeMorphs[x]+ "-----unfixed-------"))
+        timeNow = time.time()
+        #print(time.time())
         maleMorphList = morphToList(maleSnakeMorphs[x])
+        maleMorphList.sort()
+        #print("maleMorphList to list took: " + str(time.time() - timeNow) + " seconds.")
         #print("fixed --------- " + str(maleMorphList))
         
         
@@ -68,23 +101,39 @@ def getAllSnakesWithTheseTraits(childTraitList):
         for trait in childTraitList:
             #not getting right morph.getting entire list
             #print("checking trait: " + trait)
+            afterTF = False
             for morph in maleMorphList:
+                #print("morph " + str(morph))
+                if morph == "":
+                    #print("morph was empty. breaking now")
+                    break
                 #print("is this trait: " + str(trait) + " in this morph: " + str(morph))
                 if trait == morph:
                     #print("found a matching trait: " + trait )
                     count +=1
+                    break
+                try:
+                    afterTF = isItAfterAlphebetically(trait[0],morph[0])
+                except IndexError:
+                    print("cant tell if " + str(trait + " is after " + str(morph) ))
+                if (afterTF):
+                    afterTF = False
+                    #print("breaking here")
+                    break
         if count == getToHere:
             print("found a match ------------------------------------ this morph: " + str(fixedMorphs) + " and this morph are the same: "+ str(traitList))
+            sys.exit()
             print(maleSnakeDataFrame[count])
             foundSnakes.append(maleSnakeDataFrame[count])
         #if count > 0 and count < len(childTraitList):
             #print("not all traits matched")
+        print("going thru 1 kid vs 1 adult snake took: " + str(time.time() - timeNow) + " to finish")
     print("looking for snakes in female file of the same morph")
     #go thru female snakes the same way
     print("starting to check the girls ----------------------")
     for y in range(len(femaleSnakeDataFrame["morphs"])):
         
-        femaleMorphList = morphToList(femaleSnakeDataFrame[y])
+        femaleMorphList = morphToList(femaleSnakeMorphs[y])
         
         count = 0
         #print("comparing ---- "+ str(maleMorphList) + " and ------ " + str(childTraitList))
@@ -156,28 +205,53 @@ def fixLikelienessElementList(likelienessElementList):
                     likelienessList.append(float(likelienessElementList[x].text.replace("%","")))
                 except StaleElementReferenceException:
                     print("couldnt find the likelieness elements")
-                    exit()
+                    sys.exit()
                 
     #print("new likelieness list: " + str(likelienessList))
     return likelienessList
 
 def fixGeneString(geneString):
     geneString = geneString.replace(" 66%","").replace("100% ","").replace("66%","").replace("100%","").replace("50%","")
-    #print("geneString after replaces" + geneString)
+    print("geneString after replaces" + geneString)
+    if not geneString:
+        print("geneString Empty")
+        return []
     geneList = []
     if geneString[0] ==" ":
         geneString = geneString[1:]
     geneHolder = ""
     noAddition = 0
     for x in range(len(geneString)):
+        #print(x)
+        #print(len(geneString))
+        if geneHolder != "":
+            if geneHolder[0] == " ":
+                geneHolder = geneHolder[1:]
         #print(geneString[x])
         if geneString[x] == " ":
+            if x == len(geneString)-1:
+                geneList.append(geneHolder)
+                break
             if geneString[x+1] == "H":
                 if geneString[x+2] =="e":
                     if geneString[x+3] =="t":
                         geneList.append(geneHolder)
                         geneHolder = ""
                         noAddition = 1
+            if geneString[x+1] == "T":
+                if geneString[x+2] == "i":
+                    geneList.append(geneHolder)
+                    geneHolder = ""
+                    noAddition = 1
+            if geneString[x+1] =="S":
+                if geneString[x+2] == "u":
+                    geneList.append(geneHolder)
+                    geneHolder = ""
+                    noAddition = 1
+            if geneString[x+1] == "N":
+                geneList.append(geneHolder)
+                geneHolder = ""
+                noAddition = 1
             if geneString[x+1] == "L":
                 if geneString[x+2] == "a":
                     if geneString[x+3] == "v":
@@ -233,17 +307,21 @@ def fixGeneString(geneString):
                             geneHolder = ""
                             noAddition = 1
             if geneString[x+1] == "A":
-                geneList.append(geneHolder)
-                geneHolder = ""
-                noAddition = 1
+                if geneString[x-1] != "d":
+                    if geneString[x-2] != "e":
+                        geneList.append(geneHolder)
+                        geneHolder = ""
+                        noAddition = 1
             if noAddition == 0:
                 geneHolder = geneHolder + geneString[x]        
         else:
             geneHolder = geneHolder + geneString[x]
         noAddition = 0
-        if x ==len(geneString) -1:
+        if x == len(geneString) -1:
             geneList.append(geneHolder)
+            break
     #print("geneList from fixGeneStringFN " + str(geneList))
+    
     return geneList
     #if next 4 letters are spacehet then start new gene
     #if next 9 letters are spacelavender then start new gene

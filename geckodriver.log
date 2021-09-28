@@ -15620,3 +15620,925 @@ JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0
 JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632861804608	geckodriver	INFO	Listening on 127.0.0.1:47713
+1632861805612	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilegQerZe"
+1632861806371	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegQerZe/search.json.mozlz4", (void 0)))
+1632861807971	Marionette	INFO	Listening on port 39633
+1632861808041	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632861963391	geckodriver	INFO	Listening on 127.0.0.1:37171
+1632861964395	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileFVSPpW"
+1632861965238	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFVSPpW/search.json.mozlz4", (void 0)))
+1632861966984	Marionette	INFO	Listening on port 41863
+1632861967036	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632862561868	geckodriver	INFO	Listening on 127.0.0.1:39021
+1632862562872	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilebiJ0FH"
+1632862563687	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebiJ0FH/search.json.mozlz4", (void 0)))
+1632862565311	Marionette	INFO	Listening on port 34311
+1632862565499	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632862583329	geckodriver	INFO	Listening on 127.0.0.1:59081
+1632862584333	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileROUlLO"
+1632862585108	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileROUlLO/search.json.mozlz4", (void 0)))
+1632862586813	Marionette	INFO	Listening on port 42251
+1632862586871	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632862990694	geckodriver	INFO	Listening on 127.0.0.1:39011
+1632862991705	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileM6Myw7"
+1632862992496	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileM6Myw7/search.json.mozlz4", (void 0)))
+1632862994070	Marionette	INFO	Listening on port 40981
+1632862994136	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632863017155	geckodriver	INFO	Listening on 127.0.0.1:38277
+1632863018159	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilew4JH0Q"
+1632863018976	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilew4JH0Q/search.json.mozlz4", (void 0)))
+1632863021748	Marionette	INFO	Listening on port 35537
+1632863021806	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632863160418	geckodriver	INFO	Listening on 127.0.0.1:59675
+1632863161423	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileRPW2wM"
+1632863162197	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRPW2wM/search.json.mozlz4", (void 0)))
+1632863163762	Marionette	INFO	Listening on port 36321
+1632863163854	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632863206059	geckodriver	INFO	Listening on 127.0.0.1:37505
+1632863207067	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileXA17ux"
+1632863207836	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXA17ux/search.json.mozlz4", (void 0)))
+1632863210104	Marionette	INFO	Listening on port 38061
+1632863210212	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632863252400	geckodriver	INFO	Listening on 127.0.0.1:33979
+1632863253404	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileJvNgSm"
+1632863254151	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJvNgSm/search.json.mozlz4", (void 0)))
+1632863262551	Marionette	INFO	Listening on port 45531
+1632863263099	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632863310320	geckodriver	INFO	Listening on 127.0.0.1:39235
+1632863311333	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileXJ85hf"
+1632863313383	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXJ85hf/search.json.mozlz4", (void 0)))
+1632863325435	Marionette	INFO	Listening on port 45269
+1632863325641	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632863733996	geckodriver	INFO	Listening on 127.0.0.1:34323
+1632863734999	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileLhjkk9"
+1632863735780	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLhjkk9/search.json.mozlz4", (void 0)))
+1632863737302	Marionette	INFO	Listening on port 34007
+1632863737340	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632863773725	geckodriver	INFO	Listening on 127.0.0.1:39529
+1632863774729	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileOk4zKF"
+1632863775571	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOk4zKF/search.json.mozlz4", (void 0)))
+1632863777135	Marionette	INFO	Listening on port 35145
+1632863777166	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632863853145	geckodriver	INFO	Listening on 127.0.0.1:46561
+1632863854148	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileiUbSmK"
+1632863854928	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileiUbSmK/search.json.mozlz4", (void 0)))
+1632863856555	Marionette	INFO	Listening on port 34127
+1632863856581	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632863914826	geckodriver	INFO	Listening on 127.0.0.1:33541
+1632863915829	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile3Iz8YP"
+1632863916653	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3Iz8YP/search.json.mozlz4", (void 0)))
+1632863918320	Marionette	INFO	Listening on port 33341
+1632863918364	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632864202735	geckodriver	INFO	Listening on 127.0.0.1:43125
+1632864203740	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile1tBjPL"
+1632864204514	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1tBjPL/search.json.mozlz4", (void 0)))
+1632864205790	Marionette	INFO	Listening on port 43565
+1632864205884	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632864263839	geckodriver	INFO	Listening on 127.0.0.1:34735
+1632864264843	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileLf5fpJ"
+1632864265696	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLf5fpJ/search.json.mozlz4", (void 0)))
+1632864267581	Marionette	INFO	Listening on port 33741
+1632864267679	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632864295270	geckodriver	INFO	Listening on 127.0.0.1:45217
+1632864296275	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileYjkvkg"
+1632864297107	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYjkvkg/search.json.mozlz4", (void 0)))
+1632864298601	Marionette	INFO	Listening on port 45205
+1632864298711	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632864341889	geckodriver	INFO	Listening on 127.0.0.1:39287
+1632864342894	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileMjumNL"
+1632864343710	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMjumNL/search.json.mozlz4", (void 0)))
+1632864345308	Marionette	INFO	Listening on port 34305
+1632864345368	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632864452147	geckodriver	INFO	Listening on 127.0.0.1:36921
+1632864453151	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile9zM45T"
+1632864453989	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9zM45T/search.json.mozlz4", (void 0)))
+1632864455600	Marionette	INFO	Listening on port 33203
+1632864455687	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632864636357	geckodriver	INFO	Listening on 127.0.0.1:36103
+1632864637362	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileI0M7B0"
+1632864638125	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileI0M7B0/search.json.mozlz4", (void 0)))
+1632864639648	Marionette	INFO	Listening on port 46615
+1632864639691	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632864706261	geckodriver	INFO	Listening on 127.0.0.1:33755
+1632864707266	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileyBOVFo"
+1632864708089	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyBOVFo/search.json.mozlz4", (void 0)))
+1632864709729	Marionette	INFO	Listening on port 34871
+1632864709794	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632864802481	geckodriver	INFO	Listening on 127.0.0.1:58351
+1632864803484	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile8LUoOR"
+1632864804256	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8LUoOR/search.json.mozlz4", (void 0)))
+1632864805847	Marionette	INFO	Listening on port 44117
+1632864805918	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632864858812	geckodriver	INFO	Listening on 127.0.0.1:48389
+1632864859817	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofiler80BhG"
+1632864860631	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiler80BhG/search.json.mozlz4", (void 0)))
+1632864862371	Marionette	INFO	Listening on port 43577
+1632864862448	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632864884793	geckodriver	INFO	Listening on 127.0.0.1:58467
+1632864885798	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileKDBgXh"
+1632864886648	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKDBgXh/search.json.mozlz4", (void 0)))
+1632864888393	Marionette	INFO	Listening on port 37637
+1632864888442	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632864974203	geckodriver	INFO	Listening on 127.0.0.1:58281
+1632864975208	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofiletySVCJ"
+1632864975989	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletySVCJ/search.json.mozlz4", (void 0)))
+1632864978316	Marionette	INFO	Listening on port 42859
+1632864978347	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632865085571	geckodriver	INFO	Listening on 127.0.0.1:45535
+1632865086575	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofiledXURf2"
+1632865087441	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledXURf2/search.json.mozlz4", (void 0)))
+1632865089273	Marionette	INFO	Listening on port 45967
+1632865089318	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632865124576	geckodriver	INFO	Listening on 127.0.0.1:55645
+1632865125579	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile46t91X"
+1632865126409	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile46t91X/search.json.mozlz4", (void 0)))
+1632865127927	Marionette	INFO	Listening on port 33877
+1632865128013	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632865148028	geckodriver	INFO	Listening on 127.0.0.1:47179
+1632865149033	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileOuo0nZ"
+1632865149851	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOuo0nZ/search.json.mozlz4", (void 0)))
+1632865151445	Marionette	INFO	Listening on port 37123
+1632865151485	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632865397407	geckodriver	INFO	Listening on 127.0.0.1:39277
+1632865398411	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilehdWewR"
+1632865399218	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehdWewR/search.json.mozlz4", (void 0)))
+1632865400766	Marionette	INFO	Listening on port 41165
+1632865400845	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632865644253	geckodriver	INFO	Listening on 127.0.0.1:56299
+1632865645262	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilegECyZT"
+1632865646076	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegECyZT/search.json.mozlz4", (void 0)))
+1632865647790	Marionette	INFO	Listening on port 45333
+1632865647895	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632865832610	geckodriver	INFO	Listening on 127.0.0.1:39709
+1632865833614	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileVyeceN"
+1632865834438	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVyeceN/search.json.mozlz4", (void 0)))
+1632865836083	Marionette	INFO	Listening on port 45859
+1632865836152	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632865862543	geckodriver	INFO	Listening on 127.0.0.1:52547
+1632865863549	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileD79V0G"
+1632865864361	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileD79V0G/search.json.mozlz4", (void 0)))
+1632865865899	Marionette	INFO	Listening on port 45073
+1632865865988	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632866666677	geckodriver	INFO	Listening on 127.0.0.1:46837
+1632866667682	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileDscKNK"
+1632866668472	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDscKNK/search.json.mozlz4", (void 0)))
+1632866669891	Marionette	INFO	Listening on port 41035
+1632866669924	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632866764958	geckodriver	INFO	Listening on 127.0.0.1:36035
+1632866765962	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile4TWoBi"
+1632866766755	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4TWoBi/search.json.mozlz4", (void 0)))
+1632866768381	Marionette	INFO	Listening on port 46773
+1632866768427	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632866816654	geckodriver	INFO	Listening on 127.0.0.1:47361
+1632866817659	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileCV5mEX"
+1632866818562	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCV5mEX/search.json.mozlz4", (void 0)))
+1632866820283	Marionette	INFO	Listening on port 34185
+1632866820396	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632866857897	geckodriver	INFO	Listening on 127.0.0.1:35403
+1632866858902	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileYIxibS"
+1632866859668	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYIxibS/search.json.mozlz4", (void 0)))
+1632866861247	Marionette	INFO	Listening on port 46179
+1632866861335	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632866930599	geckodriver	INFO	Listening on 127.0.0.1:40391
+1632866931604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileGQdymb"
+1632866932435	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGQdymb/search.json.mozlz4", (void 0)))
+1632866933991	Marionette	INFO	Listening on port 36281
+1632866934035	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632866998322	geckodriver	INFO	Listening on 127.0.0.1:45393
+1632866999327	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilekt3HwP"
+1632867000147	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekt3HwP/search.json.mozlz4", (void 0)))
+1632867001664	Marionette	INFO	Listening on port 38861
+1632867001760	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632867022241	geckodriver	INFO	Listening on 127.0.0.1:40595
+1632867023245	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileDjNq4I"
+1632867024067	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDjNq4I/search.json.mozlz4", (void 0)))
+1632867025611	Marionette	INFO	Listening on port 36437
+1632867025681	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632867049095	geckodriver	INFO	Listening on 127.0.0.1:53873
+1632867050099	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileMfEv1G"
+1632867050918	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMfEv1G/search.json.mozlz4", (void 0)))
+1632867053025	Marionette	INFO	Listening on port 33599
+1632867053140	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632867150683	geckodriver	INFO	Listening on 127.0.0.1:55045
+1632867151687	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileBXB6RP"
+1632867152475	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBXB6RP/search.json.mozlz4", (void 0)))
+1632867156030	Marionette	INFO	Listening on port 42707
+1632867156130	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632867200422	geckodriver	INFO	Listening on 127.0.0.1:35623
+1632867201426	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileWOyIVb"
+1632867202192	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWOyIVb/search.json.mozlz4", (void 0)))
+1632867203877	Marionette	INFO	Listening on port 46051
+1632867203962	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632867290667	geckodriver	INFO	Listening on 127.0.0.1:58281
+1632867291671	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile0DBZTl"
+1632867292613	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0DBZTl/search.json.mozlz4", (void 0)))
+1632867294403	Marionette	INFO	Listening on port 41019
+1632867294503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632867311804	geckodriver	INFO	Listening on 127.0.0.1:36563
+1632867312807	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileshQF0G"
+1632867313654	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileshQF0G/search.json.mozlz4", (void 0)))
+1632867315892	Marionette	INFO	Listening on port 41469
+1632867315946	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632867376442	geckodriver	INFO	Listening on 127.0.0.1:57823
+1632867377447	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileFPxxsb"
+1632867378279	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFPxxsb/search.json.mozlz4", (void 0)))
+1632867380005	Marionette	INFO	Listening on port 40543
+1632867380081	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632867531848	geckodriver	INFO	Listening on 127.0.0.1:50171
+1632867532856	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilePhvOUA"
+1632867533669	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePhvOUA/search.json.mozlz4", (void 0)))
+1632867537435	Marionette	INFO	Listening on port 40433
+1632867537510	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632867561243	geckodriver	INFO	Listening on 127.0.0.1:52079
+1632867562247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileP35Ms9"
+1632867563662	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileP35Ms9/search.json.mozlz4", (void 0)))
+1632867575139	Marionette	INFO	Listening on port 38237
+1632867575236	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632867597248	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1632867597250	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1632867597273	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1632867604601	geckodriver	INFO	Listening on 127.0.0.1:48965
+1632867605642	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileOYHB5W"
+1632867607424	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOYHB5W/search.json.mozlz4", (void 0)))
+1632867617460	Marionette	INFO	Listening on port 35379
+1632867617587	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632868507138	Marionette	INFO	Stopped listening on port 35379
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1632868541613	Marionette	INFO	Stopped listening on port 38237
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 160109, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-i2FYvX/firefox-92.0+build3/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1632868575202	geckodriver	INFO	Listening on 127.0.0.1:55629
+1632868576207	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileBOwgIE"
+1632868577027	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBOwgIE/search.json.mozlz4", (void 0)))
+1632868578648	Marionette	INFO	Listening on port 40757
+1632868578753	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632868591315	geckodriver	INFO	Listening on 127.0.0.1:38255
+1632868592321	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilebjdYPh"
+1632868593199	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebjdYPh/search.json.mozlz4", (void 0)))
+1632868594965	Marionette	INFO	Listening on port 42325
+1632868595062	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632868643405	geckodriver	INFO	Listening on 127.0.0.1:54479
+1632868644410	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilefWBNfU"
+1632868645277	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefWBNfU/search.json.mozlz4", (void 0)))
+1632868647675	Marionette	INFO	Listening on port 37321
+1632868647758	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632868745129	geckodriver	INFO	Listening on 127.0.0.1:41255
+1632868746134	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile3Vzr3g"
+1632868746949	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3Vzr3g/search.json.mozlz4", (void 0)))
+1632868748534	Marionette	INFO	Listening on port 37661
+1632868748574	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632868811310	geckodriver	INFO	Listening on 127.0.0.1:51403
+1632868812315	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileBao5WC"
+1632868813080	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBao5WC/search.json.mozlz4", (void 0)))
+1632868815830	Marionette	INFO	Listening on port 46709
+1632868815868	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632868904737	geckodriver	INFO	Listening on 127.0.0.1:59047
+1632868905741	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileAOBo3R"
+1632868906653	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAOBo3R/search.json.mozlz4", (void 0)))
+1632868915599	Marionette	INFO	Listening on port 36475
+1632868915624	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632869000140	geckodriver	INFO	Listening on 127.0.0.1:59189
+1632869001145	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileVjynoL"
+1632869001948	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVjynoL/search.json.mozlz4", (void 0)))
+1632869005964	Marionette	INFO	Listening on port 41113
+1632869006220	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632869049383	geckodriver	INFO	Listening on 127.0.0.1:48279
+1632869050388	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileRKZFF7"
+1632869052162	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRKZFF7/search.json.mozlz4", (void 0)))
+1632869060236	Marionette	INFO	Listening on port 35943
+1632869060363	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632869092965	geckodriver	INFO	Listening on 127.0.0.1:53685
+1632869093969	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile8MM4A6"
+1632869095571	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8MM4A6/search.json.mozlz4", (void 0)))
+1632869098082	Marionette	INFO	Listening on port 40071
+1632869098123	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632869145477	geckodriver	INFO	Listening on 127.0.0.1:37789
+1632869146484	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile8xXuHq"
+1632869147339	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8xXuHq/search.json.mozlz4", (void 0)))
+1632869148922	Marionette	INFO	Listening on port 41445
+1632869149017	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632869297949	geckodriver	INFO	Listening on 127.0.0.1:39703
+1632869298952	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilebpqpBw"
+1632869299775	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebpqpBw/search.json.mozlz4", (void 0)))
+1632869301361	Marionette	INFO	Listening on port 43209
+1632869301411	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632869379541	geckodriver	INFO	Listening on 127.0.0.1:58959
+1632869380544	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilepNMQBf"
+1632869381381	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepNMQBf/search.json.mozlz4", (void 0)))
+1632869383217	Marionette	INFO	Listening on port 39013
+1632869383276	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632869657514	geckodriver	INFO	Listening on 127.0.0.1:53115
+1632869658523	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilewImNmn"
+1632869659594	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewImNmn/search.json.mozlz4", (void 0)))
+1632869662814	Marionette	INFO	Listening on port 34849
+1632869662887	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632869747501	Marionette	INFO	Stopped listening on port 34849
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1632869790880	geckodriver	INFO	Listening on 127.0.0.1:34321
+1632869791884	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileKEtAoG"
+1632869792718	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKEtAoG/search.json.mozlz4", (void 0)))
+1632869794277	Marionette	INFO	Listening on port 40247
+1632869794353	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632869811539	geckodriver	INFO	Listening on 127.0.0.1:59109
+1632869812543	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileHtY4Jl"
+1632869813335	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHtY4Jl/search.json.mozlz4", (void 0)))
+1632869818706	Marionette	INFO	Listening on port 44625
+1632869818802	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632869838971	geckodriver	INFO	Listening on 127.0.0.1:55197
+1632869839975	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileWSunLW"
+1632869840852	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWSunLW/search.json.mozlz4", (void 0)))
+1632869848125	Marionette	INFO	Listening on port 40759
+1632869848159	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1632869851988	Marionette	INFO	Stopped listening on port 44625
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 166250, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-i2FYvX/firefox-92.0+build3/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632869855342	Marionette	INFO	Stopped listening on port 40247
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1632869883523	Marionette	INFO	Stopped listening on port 40759
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1632869975309	geckodriver	INFO	Listening on 127.0.0.1:34645
+1632869976313	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileVsnqPu"
+1632869977109	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVsnqPu/search.json.mozlz4", (void 0)))
+1632869978880	Marionette	INFO	Listening on port 33797
+1632869978944	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632869994941	geckodriver	INFO	Listening on 127.0.0.1:36967
+1632869995945	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilevnFcVc"
+1632869996820	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevnFcVc/search.json.mozlz4", (void 0)))
+1632869998543	Marionette	INFO	Listening on port 37213
+1632869998586	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632872397606	geckodriver	INFO	Listening on 127.0.0.1:42027
+1632872398611	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileOjBM0g"
+1632872399394	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOjBM0g/search.json.mozlz4", (void 0)))
+1632872400867	Marionette	INFO	Listening on port 36263
+1632872400943	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
