@@ -41,6 +41,7 @@ def getAllSnakesWithTheseTraits(traitList):
             print(maleSnakeDataFrame[count])
             foundSnakes.append(maleSnakeDataFrame[count])
         count += 1
+    print("looking for snakes in female file of the same morph")
     for morph in femaleSnakeDataFrame["morphs"]:
         count = 0
         if morph == traitList:
@@ -102,12 +103,34 @@ def findAvgPriceOfSnake(driver,snake, snakeMFrame, snakeFFrame):
     if snakesWithTheseParticularTraits == []:
         return 0
     else:
-        #pricesOfSpecificSnake = 
+        pricesOfSpecificSnake = snakesWithTheseParticularTraits["cost"]
+        print("this is the cost of the snakes found in a list: " + str(pricesOfSpecificSnake))
         avg = averageSnakePrices(pricesOfSpecificSnake)
     #gotoSnakeWithTheseTraits(driver,traits)
     #pricesOfSpecificSnake = goThroughEachSnakeWithSpecificTraits(driver)
     #avg = averageSnakePrices(pricesOfSpecificSnake)
     #return avg
+
+def fixLikelienessElementList(likelienessElementList):
+    print("fixing likelieness list")
+    #return list of likelinesses
+    likelienessList = []
+    for x in range(len(likelienessElementList)):
+        if x != 0:
+            #print(likelienessElementList[x].text)
+            likelienessList.append(float(likelienessElementList[x].text.replace("%","")))
+    print("new likelieness list: " + str(likelienessList))
+    return likelienessList
+    
+def fixGenesElementList(genesElementList):
+    #return list of lists of genes
+    print("fixing genes list")
+    print(str(genesElementList) + " genes element list raw")
+    fixedGenesList = []
+    for x in range(len(genesElementList)):
+        fixedGenesList.append(list(genesElementList[x].text))
+    print("new genes list: " + str(fixedGenesList))
+    return fixedGenesList
 
 def grabSnakeComboData(driver, snakeMFrame, snakeFFrame):
     print("starting grabsnakecomboData")
@@ -127,7 +150,9 @@ def grabSnakeComboData(driver, snakeMFrame, snakeFFrame):
                 driver.get(snakeComboUrl)
             likelienessElementList = driver.find_elements(By.CLASS_NAME, "prob")
             genesElementList = driver.find_elements(By.CLASS_NAME, "genes")
-            snakeChildren.append([likelienessElementList[x].text.replace("%",""),list(genesElementList[x].text.replace("100%","").replace("50%","").replace(" 66%",""))])
+            fixedLikelienessList  = fixLikelienessElementList(likelienessElementList)
+            fixedGenesList = fixGenesElementList(genesElementList)
+            snakeChildren.append([fixedLikelienessList,fixedGenesList])
             time.sleep(4)
             snakeChildPrice = findAvgPriceOfSnake(driver,snakeChildren[x-1], snakeMFrame, snakeFFrame)
             #print("what is showing when this pops up?")
