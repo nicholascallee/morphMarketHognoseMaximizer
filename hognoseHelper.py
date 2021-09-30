@@ -12,6 +12,83 @@ from os import path
 import sys
 import ast
 
+def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
+    maleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportm', names = ["morphs","cost","link"])
+    femaleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportf', names = ["morphs","cost","link"])
+    #create new columns like ynAnaconda and ynArctic
+    #print("calling createNewColumns")
+    newMaleSnakeDataFrame = maleDf
+    newFemaleSnakeDataFrame = femaleDf
+    # newMaleSnakeDataFrame = createNewColumns(maleSnakeDataFrame,"m")
+    # newFemaleSnakeDataFrame = createNewColumns(femaleSnakeDataFrame,"f")
+    #creating blank dataframe to put stuff into
+    foundMaleSnakesDataFrame = pd.DataFrame(columns = newMaleSnakeDataFrame.columns)
+    #for all of the children
+    for x in range(len(childTraitList)):
+        if x == 0:
+            #print(type(childTraitList))
+            trait = childTraitList[x]
+            #print(trait)
+            try:
+                concatThis = [foundMaleSnakesDataFrame,newMaleSnakeDataFrame.where(newMaleSnakeDataFrame["YN"+str(trait)] == True)]
+                foundMaleSnakeDataFrame = pd.concat(concatThis)
+                #foundMaleSnakesDataFrame.concat(newMaleSnakeDataFrame.where(newMaleSnakeDataFrame["YN"+str(trait)] == True))
+            except KeyError:
+               # print("Male directory contained no snakes with the morph " + str(trait) + ". Moving on...")
+                break
+        #if second or later
+        if x >0:
+            foundMaleSnakesDataFrame.drop(foundMaleSnakesDataFrame.loc[foundMaleSnakesDataFrame['YN' + str(trait) ]==False].index, inplace=True)
+    if not foundMaleSnakesDataFrame.empty:
+        print("found matches against males for the snake with these traits: " + str(childTraitList ))
+
+    foundFemaleSnakesDataFrame = pd.DataFrame(columns = newFemaleSnakeDataFrame.columns)
+    for y in range(len(childTraitList)):
+        if y == 0 :
+            trait = childTraitList[y]
+            try:
+                concatThis2 = [foundFemaleSnakesDataFrame,newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+str(trait)] == True)]
+                foundFemaleSnakeDataFrame = pd.concat(concatThis2)
+                #foundFemaleSnakesDataFrame.concat(newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+ str(trait)] == True))
+            except KeyError:
+                #print("Female directory contained no snakes with the morph" + str(trait) + ". Moving on...")
+                break
+        #if second or later
+        if y >0:
+            foundFemaleSnakesDataFrame.drop(foundFemaleSnakesDataFrame.loc[foundFemaleSnakesDataFrame['YN' + str(trait) ]==False].index, inplace=True)
+    if not foundFemaleSnakesDataFrame.empty:
+        print("found matches against females for the snake with these traits: " + str(childTraitList ))
+
+    if not foundMaleSnakesDataFrame.empty:
+        if not foundFemaleSnakesDataFrame.empty:
+                foundSnakesDataFrame = foundMaleSnakesDataFrame.append(foundFemaleSnakesDataFrame)
+        else:
+            return foundMaleSnakesDataFrame
+    if not foundFemaleSnakesDataFrame.empty:
+        return foundFemaleSnakesDataFrame
+    else:
+        return 0
+
+def fixLikelienessElementList(likelienessElementList):
+    #return list of likelinesses
+    likelienessList = []
+    for x in range(len(likelienessElementList)):
+        if likelienessElementList[x].text != '':
+            if x != 0:
+                #print(likelienessElementList[x].text)
+                #time.sleep(.5)
+                try:
+                    likelienessList.append(float(likelienessElementList[x].text.replace("%","")))
+                except StaleElementReferenceException:
+                    time.sleep(3)
+                    try:
+                        likelienessList.append(float(likelienessElementList[x].text.replace("%","")))
+                    except StaleElementReferenceException:
+                        print("couldnt find the likelieness elements")
+                        sys.exit()
+                
+    return likelienessList
+
 def averageSnakePrices(snakePrices):
     if len(snakePrices) > 0:
         adder = 0
@@ -76,81 +153,7 @@ def createNewColumns(snakeDataFrame,sex):
     #print(snakeDataFrame.loc[snakeDataFrame["YNArctic"] == "True"].head(n=10))
     return snakeDataFrame
 
-def getAllSnakesWithTheseTraits(childTraitList):
-    maleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportm', names = ["morphs","cost","link"])
-    femaleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportf', names = ["morphs","cost","link"])
-    #create new columns like ynAnaconda and ynArctic
-    print("calling createNewColumns")
-    newMaleSnakeDataFrame = global.maleDataFrame
-    newFemaleSnakeDataFrame = global.femaleDataFrame
-    # newMaleSnakeDataFrame = createNewColumns(maleSnakeDataFrame,"m")
-    # newFemaleSnakeDataFrame = createNewColumns(femaleSnakeDataFrame,"f")
-    #creating blank dataframe to put stuff into
-    foundMaleSnakesDataFrame = pd.DataFrame(columns = newMaleSnakeDataFrame.columns)
-    #for all of the children
-    for x in range(len(childTraitList)):
-        if x == 0:
-            #print(type(childTraitList))
-            trait = childTraitList[x]
-            #print(trait)
-            try:
-                concatThis = [foundMaleSnakesDataFrame,newMaleSnakeDataFrame.where(newMaleSnakeDataFrame["YN"+str(trait)] == True)]
-                foundMaleSnakeDataFrame = pd.concat(concatThis)
-                #foundMaleSnakesDataFrame.concat(newMaleSnakeDataFrame.where(newMaleSnakeDataFrame["YN"+str(trait)] == True))
-            except KeyError:
-               # print("Male directory contained no snakes with the morph " + str(trait) + ". Moving on...")
-                break
-        #if second or later
-        if x >0:
-            foundMaleSnakesDataFrame.drop(foundMaleSnakesDataFrame.loc[foundMaleSnakesDataFrame['YN' + str(trait) ]==False].index, inplace=True)
-    if not foundMaleSnakesDataFrame.empty:
-        print("found matches against males for the snake with these traits: " + str(childTraitList ))
 
-    foundFemaleSnakesDataFrame = pd.DataFrame(columns = newFemaleSnakeDataFrame.columns)
-    for y in range(len(childTraitList)):
-        if y == 0 :
-            trait = childTraitList[y]
-            try:
-                concatThis2 = [foundFemaleSnakesDataFrame,newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+str(trait)] == True)]
-                foundFemaleSnakeDataFrame = pd.concat(concatThis2)
-                #foundFemaleSnakesDataFrame.concat(newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+ str(trait)] == True))
-            except KeyError:
-                #print("Female directory contained no snakes with the morph" + str(trait) + ". Moving on...")
-                break
-        #if second or later
-        if y >0:
-            foundFemaleSnakesDataFrame.drop(foundFemaleSnakesDataFrame.loc[foundFemaleSnakesDataFrame['YN' + str(trait) ]==False].index, inplace=True)
-    if not foundFemaleSnakesDataFrame.empty:
-        print("found matches against females for the snake with these traits: " + str(childTraitList ))
-
-    if not foundMaleSnakesDataFrame.empty:
-        if not foundFemaleSnakesDataFrame.empty:
-                foundSnakesDataFrame = foundMaleSnakesDataFrame.append(foundFemaleSnakesDataFrame)
-        else:
-            return foundMaleSnakesDataFrame
-    if not foundFemaleSnakesDataFrame.empty:
-        return foundFemaleSnakesDataFrame
-    else:
-        return 0
-
-def fixLikelienessElementList(likelienessElementList):
-    #return list of likelinesses
-    likelienessList = []
-    for x in range(len(likelienessElementList)):
-        if x != 0:
-            #print(likelienessElementList[x].text)
-            #time.sleep(.5)
-            try:
-                likelienessList.append(float(likelienessElementList[x].text.replace("%","")))
-            except StaleElementReferenceException:
-                time.sleep(3)
-                try:
-                    likelienessList.append(float(likelienessElementList[x].text.replace("%","")))
-                except StaleElementReferenceException:
-                    print("couldnt find the likelieness elements")
-                    sys.exit()
-                
-    return likelienessList
 
 def fixGeneString(geneString):
     geneString = geneString.replace(" 66%","").replace("100% ","").replace("66%","").replace("100%","").replace("50%","")
@@ -303,7 +306,7 @@ def fixGenesElementList(genesElementList):
     exportGenes(fixedGenesList)
     return fixedGenesList
 
-def runMeFirst():
+def runMeFirst(maleSnakeDataFrame, femaleSnakeDataFrame):
     male = createNewColumns(maleSnakeDataFrame,"m")
     female = createNewColumns(femaleSnakeDataFrame,"f")
     return [male, female]

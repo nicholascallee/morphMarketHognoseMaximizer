@@ -21314,3 +21314,1398 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1632969905510	geckodriver	INFO	Listening on 127.0.0.1:51911
+1632969906517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilevp9dQL"
+1632969907288	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevp9dQL/search.json.mozlz4", (void 0)))
+1632969908850	Marionette	INFO	Listening on port 46271
+1632969908940	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632969931858	Marionette	INFO	Stopped listening on port 46271
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1632971311690	geckodriver	INFO	Listening on 127.0.0.1:59277
+1632971312698	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilejxYG5h"
+1632971313548	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejxYG5h/search.json.mozlz4", (void 0)))
+1632971316461	Marionette	INFO	Listening on port 34649
+1632971316559	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632971513706	geckodriver	INFO	Listening on 127.0.0.1:36579
+1632971514710	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileRte96O"
+1632971515520	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRte96O/search.json.mozlz4", (void 0)))
+1632971518121	Marionette	INFO	Listening on port 44855
+1632971518186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1632971546173	geckodriver	INFO	Listening on 127.0.0.1:43837
+1632971547182	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileqSZea9"
+1632971548309	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqSZea9/search.json.mozlz4", (void 0)))
+1632971552241	Marionette	INFO	Listening on port 44275
+1632971552362	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632971616511	geckodriver	INFO	Listening on 127.0.0.1:55625
+1632971617519	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilewlPpy5"
+1632971618324	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewlPpy5/search.json.mozlz4", (void 0)))
+1632971623267	Marionette	INFO	Listening on port 46443
+1632971623369	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632971798606	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632971836641	geckodriver	INFO	Listening on 127.0.0.1:60129
+1632971837665	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofiletAuRl6"
+1632971842642	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletAuRl6/search.json.mozlz4", (void 0)))
+1632971845899	Marionette	INFO	Listening on port 45669
+1632971845929	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632972024865	geckodriver	INFO	Listening on 127.0.0.1:33837
+1632972025871	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileDrkAeY"
+1632972026705	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDrkAeY/search.json.mozlz4", (void 0)))
+1632972028213	Marionette	INFO	Listening on port 45355
+1632972028303	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632972091072	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632972147470	geckodriver	INFO	Listening on 127.0.0.1:44845
+1632972148474	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilef1wM5S"
+1632972149318	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilef1wM5S/search.json.mozlz4", (void 0)))
+1632972150967	Marionette	INFO	Listening on port 46617
+1632972151006	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632972160866	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632972174855	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632972188289	geckodriver	INFO	Listening on 127.0.0.1:57905
+1632972189294	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile2UgtjA"
+1632972190286	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2UgtjA/search.json.mozlz4", (void 0)))
+1632972192023	Marionette	INFO	Listening on port 35649
+1632972192126	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632972467102	geckodriver	INFO	Listening on 127.0.0.1:44945
+1632972468106	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileSL6dAk"
+1632972468912	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSL6dAk/search.json.mozlz4", (void 0)))
+1632972470580	Marionette	INFO	Listening on port 41999
+1632972470631	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632972570669	geckodriver	INFO	Listening on 127.0.0.1:59937
+1632972571677	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile94N5j5"
+1632972572514	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile94N5j5/search.json.mozlz4", (void 0)))
+1632972575041	Marionette	INFO	Listening on port 34421
+1632972575136	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632972624824	geckodriver	INFO	Listening on 127.0.0.1:60613
+1632972625827	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileaNJrf6"
+1632972626588	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaNJrf6/search.json.mozlz4", (void 0)))
+1632972628568	Marionette	INFO	Listening on port 33997
+1632972628664	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632972799529	geckodriver	INFO	Listening on 127.0.0.1:43443
+1632972800533	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilecf6Nln"
+1632972801390	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecf6Nln/search.json.mozlz4", (void 0)))
+1632972805092	Marionette	INFO	Listening on port 35523
+1632972805242	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632972840900	geckodriver	INFO	Listening on 127.0.0.1:35997
+1632972841904	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileTzGC8X"
+1632972842756	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileTzGC8X/search.json.mozlz4", (void 0)))
+1632972847897	Marionette	INFO	Listening on port 41061
+1632972848051	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632972887374	Marionette	INFO	Stopped listening on port 41061
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1632972947575	geckodriver	INFO	Listening on 127.0.0.1:36887
+1632972948578	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileHTyfcd"
+1632972949364	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHTyfcd/search.json.mozlz4", (void 0)))
+1632972951047	Marionette	INFO	Listening on port 34629
+1632972951114	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632973051934	Marionette	INFO	Stopped listening on port 34629
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632973136377	geckodriver	INFO	Listening on 127.0.0.1:50683
+1632973137381	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileKsewCR"
+1632973138186	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKsewCR/search.json.mozlz4", (void 0)))
+1632973139762	Marionette	INFO	Listening on port 34797
+1632973139918	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632973176063	geckodriver	INFO	Listening on 127.0.0.1:35293
+1632973177067	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile8aqfly"
+1632973177859	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8aqfly/search.json.mozlz4", (void 0)))
+1632973179320	Marionette	INFO	Listening on port 36375
+1632973179399	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632973513895	geckodriver	INFO	Listening on 127.0.0.1:50023
+1632973514899	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilezv9P17"
+1632973515739	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezv9P17/search.json.mozlz4", (void 0)))
+1632973517330	Marionette	INFO	Listening on port 35147
+1632973517435	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632973552662	geckodriver	INFO	Listening on 127.0.0.1:42521
+1632973553666	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileCbdtAv"
+1632973554466	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCbdtAv/search.json.mozlz4", (void 0)))
+1632973557284	Marionette	INFO	Listening on port 42157
+1632973557323	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632973585509	geckodriver	INFO	Listening on 127.0.0.1:46877
+1632973585517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilepPRfK4"
+1632973586432	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepPRfK4/search.json.mozlz4", (void 0)))
+1632973587977	Marionette	INFO	Listening on port 44663
+1632973588049	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632973792462	geckodriver	INFO	Listening on 127.0.0.1:60855
+1632973793466	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile4Bv0Yl"
+1632973794286	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4Bv0Yl/search.json.mozlz4", (void 0)))
+1632973795641	Marionette	INFO	Listening on port 35909
+1632973795731	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632973815553	geckodriver	INFO	Listening on 127.0.0.1:42879
+1632973816558	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilekzRHGO"
+1632973817420	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekzRHGO/search.json.mozlz4", (void 0)))
+1632973818869	Marionette	INFO	Listening on port 40637
+1632973818895	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632973867053	Marionette	INFO	Stopped listening on port 40637
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632973867888	Marionette	INFO	Stopped listening on port 44663
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1632973956358	geckodriver	INFO	Listening on 127.0.0.1:58403
+1632973957362	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofiletPmxk9"
+1632973958143	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletPmxk9/search.json.mozlz4", (void 0)))
+1632973959459	Marionette	INFO	Listening on port 37065
+1632973959494	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632973981903	geckodriver	INFO	Listening on 127.0.0.1:46983
+1632973982906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileAGeASx"
+1632973983738	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAGeASx/search.json.mozlz4", (void 0)))
+1632973985177	Marionette	INFO	Listening on port 40709
+1632973985267	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://d20zyr0oabjxc2.cloudfront.net/static/lib/bootstrap/css/styles.min.7d40aa33c280.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://d20zyr0oabjxc2.cloudfront.net/static/lib/svg-badges/css/svg-badges.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://d20zyr0oabjxc2.cloudfront.net/static/scss/theme/pipeline-wizard.510efa423253.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://d20zyr0oabjxc2.cloudfront.net/static/hijack/hijack-styles.a7cafac63295.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://www.gstatic.com/recaptcha/releases/-TriQeni1Ls-Mdq_ssN2cUL5/styles__ltr.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://www.gstatic.com/recaptcha/releases/-TriQeni1Ls-Mdq_ssN2cUL5/styles__ltr.css without a browsingContextID set
+1632974077407	Marionette	INFO	Stopped listening on port 37065
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632974079386	geckodriver	INFO	Listening on 127.0.0.1:33981
+1632974080390	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile4qoffV"
+1632974081174	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4qoffV/search.json.mozlz4", (void 0)))
+1632974082617	Marionette	INFO	Listening on port 41491
+1632974082720	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632974172325	Marionette	INFO	Stopped listening on port 41491
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632974197565	geckodriver	INFO	Listening on 127.0.0.1:56025
+1632974198570	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileW5Ck7H"
+1632974199341	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileW5Ck7H/search.json.mozlz4", (void 0)))
+1632974200720	Marionette	INFO	Listening on port 44881
+1632974200799	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632974222563	geckodriver	INFO	Listening on 127.0.0.1:45613
+1632974223567	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileqYfelr"
+1632974224412	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqYfelr/search.json.mozlz4", (void 0)))
+1632974226376	Marionette	INFO	Listening on port 45173
+1632974226411	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632974261714	geckodriver	INFO	Listening on 127.0.0.1:36421
+1632974262718	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileihtoOd"
+1632974263949	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileihtoOd/search.json.mozlz4", (void 0)))
+1632974266335	Marionette	INFO	Listening on port 36645
+1632974266369	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632974730177	geckodriver	INFO	Listening on 127.0.0.1:51205
+1632974731181	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileLmUyhz"
+1632974731973	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLmUyhz/search.json.mozlz4", (void 0)))
+1632974734648	Marionette	INFO	Listening on port 41607
+1632974734737	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632974771442	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632974831470	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632975040658	geckodriver	INFO	Listening on 127.0.0.1:35571
+1632975041660	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileo5OMqM"
+1632975042505	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileo5OMqM/search.json.mozlz4", (void 0)))
+1632975045073	Marionette	INFO	Listening on port 46033
+1632975045135	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632975087584	geckodriver	INFO	Listening on 127.0.0.1:56913
+1632975088588	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilekcAiIs"
+1632975089450	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekcAiIs/search.json.mozlz4", (void 0)))
+1632975100167	Marionette	INFO	Listening on port 44027
+1632975100373	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1632975124288	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632975164210	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632975281738	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632975342643	geckodriver	INFO	Listening on 127.0.0.1:55619
+1632975343647	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile9lYYXb"
+1632975345173	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9lYYXb/search.json.mozlz4", (void 0)))
+1632975347723	Marionette	INFO	Listening on port 40043
+1632975347784	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632975369674	Marionette	INFO	Stopped listening on port 40043
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1632975371615	geckodriver	INFO	Listening on 127.0.0.1:40777
+1632975372624	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofiletz3G8O"
+1632975373492	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletz3G8O/search.json.mozlz4", (void 0)))
+1632975375122	Marionette	INFO	Listening on port 40593
+1632975375158	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632975513011	geckodriver	INFO	Listening on 127.0.0.1:52199
+1632975514015	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileCKDVqw"
+1632975514851	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCKDVqw/search.json.mozlz4", (void 0)))
+1632975516507	Marionette	INFO	Listening on port 40503
+1632975516544	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632975697068	Marionette	INFO	Stopped listening on port 40503
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632975720077	geckodriver	INFO	Listening on 127.0.0.1:51717
+1632975721088	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileVal0ck"
+1632975721893	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVal0ck/search.json.mozlz4", (void 0)))
+1632975723342	Marionette	INFO	Listening on port 44995
+1632975723419	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632975895110	geckodriver	INFO	Listening on 127.0.0.1:43239
+1632975896115	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileAHqwOW"
+1632975896925	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAHqwOW/search.json.mozlz4", (void 0)))
+1632975898373	Marionette	INFO	Listening on port 38101
+1632975898447	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632975972847	geckodriver	INFO	Listening on 127.0.0.1:50981
+1632975973851	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilemfbwmZ"
+1632975974677	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemfbwmZ/search.json.mozlz4", (void 0)))
+1632975976375	Marionette	INFO	Listening on port 35849
+1632975976481	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632976000747	geckodriver	INFO	Listening on 127.0.0.1:39659
+1632976001751	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofiledO5sRn"
+1632976002582	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledO5sRn/search.json.mozlz4", (void 0)))
+1632976004296	Marionette	INFO	Listening on port 41763
+1632976004384	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632976073941	Marionette	INFO	Stopped listening on port 41763
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632976074456	geckodriver::marionette	ERROR	Failed to close browser connection: Transport endpoint is not connected (os error 107)
+1632976103827	geckodriver	INFO	Listening on 127.0.0.1:37239
+1632976104832	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileYT1nFn"
+1632976105594	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYT1nFn/search.json.mozlz4", (void 0)))
+1632976107132	Marionette	INFO	Listening on port 32775
+1632976107164	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632976181177	geckodriver	INFO	Listening on 127.0.0.1:40285
+1632976182181	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileZGq4Ei"
+1632976182990	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZGq4Ei/search.json.mozlz4", (void 0)))
+1632976184262	Marionette	INFO	Listening on port 44511
+1632976184375	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632976229471	geckodriver	INFO	Listening on 127.0.0.1:49831
+1632976230476	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileJHoHZJ"
+1632976231264	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJHoHZJ/search.json.mozlz4", (void 0)))
+1632976232584	Marionette	INFO	Listening on port 33865
+1632976232610	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632976253786	geckodriver	INFO	Listening on 127.0.0.1:49167
+1632976254791	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileEYzKqA"
+1632976255589	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEYzKqA/search.json.mozlz4", (void 0)))
+1632976257230	Marionette	INFO	Listening on port 34237
+1632976257330	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632976398386	geckodriver	INFO	Listening on 127.0.0.1:37869
+1632976399390	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileLdSCtM"
+1632976400118	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLdSCtM/search.json.mozlz4", (void 0)))
+1632976401566	Marionette	INFO	Listening on port 39851
+1632976401621	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632976528200	geckodriver	INFO	Listening on 127.0.0.1:38061
+1632976529204	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileicAUkd"
+1632976529997	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileicAUkd/search.json.mozlz4", (void 0)))
+1632976531470	Marionette	INFO	Listening on port 46049
+1632976531533	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632976575919	geckodriver	INFO	Listening on 127.0.0.1:50441
+1632976576923	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilel4257o"
+1632976577743	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilel4257o/search.json.mozlz4", (void 0)))
+1632976579142	Marionette	INFO	Listening on port 37333
+1632976579254	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632976663011	geckodriver	INFO	Listening on 127.0.0.1:53459
+1632976664015	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileaht9sg"
+1632976664804	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaht9sg/search.json.mozlz4", (void 0)))
+1632976666151	Marionette	INFO	Listening on port 34781
+1632976666260	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632976794188	geckodriver	INFO	Listening on 127.0.0.1:48717
+1632976795193	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile8ti7Ta"
+1632976796008	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8ti7Ta/search.json.mozlz4", (void 0)))
+1632976797654	Marionette	INFO	Listening on port 43677
+1632976797725	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632976880859	geckodriver	INFO	Listening on 127.0.0.1:44343
+1632976881863	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileH5qPsn"
+1632976882638	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileH5qPsn/search.json.mozlz4", (void 0)))
+1632976884138	Marionette	INFO	Listening on port 36013
+1632976884192	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+1632976916614	geckodriver	INFO	Listening on 127.0.0.1:37897
+1632976917618	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileC8PZ1X"
+1632976918396	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileC8PZ1X/search.json.mozlz4", (void 0)))
+1632976919989	Marionette	INFO	Listening on port 40137
+1632976920047	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1632976957185	geckodriver	INFO	Listening on 127.0.0.1:35353
+1632976958191	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilewrY37Z"
+1632976959031	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewrY37Z/search.json.mozlz4", (void 0)))
+1632976960368	Marionette	INFO	Listening on port 32779
+1632976960501	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
+JavaScript error: https://d20zyr0oabjxc2.cloudfront.net/static/lib/scripts.7c1d0bf0976f.js, line 7: TypeError: No method named "destroy"
