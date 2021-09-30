@@ -10,6 +10,7 @@ from selenium.common.exceptions import StaleElementReferenceException
 import os.path
 from os import path
 import sys
+import ast
 
 def averageSnakePrices(snakePrices):
     if len(snakePrices) > 0:
@@ -31,32 +32,60 @@ def morphToList(stringOfMorphs):
     stringOfMorphsFixed = fixGeneString(stringOfMorphs)
     return stringOfMorphsFixed
 
+def fixLookingAt(this):
+    this = this.replace("100% ","").replace("50% ","").replace("66% ","").replace("Pos ","")
+    this = ast.literal_eval(this)
+    #print(this)
+    #print(type(this))
+    return this
 
 def containsMorph(morph,lookingAt):
-    for x in lookingAt:
-        if x == morph:
+    #print(morph)
+    #print("morph ^^^")
+    #print("starting to look at new instance ")
+    lookingAt = fixLookingAt(lookingAt)
+    
+    for z in range(len(lookingAt)):
+        #print("is " + str(morph) + " equal to " + str(lookingAt[z]))
+        if morph == lookingAt[z]:
+            #print( str(morph) + " is equal to " + str(lookingAt[z]))
             return True
-        else:
-            return False
+    #print("none of the morphs in this instances morph combination containted: " + morph)
+    return False
 
 def createNewColumns(snakeDataFrame,sex):
     if (path.exists("/home/nick/Documents/morphMarketHognoseMaximizer/newSnakeDataFrame" + sex) != True):
+        #for all morph combos in the dataframe
+        print("creating new dataframe with new columns")
         for x in snakeDataFrame["morphs"]:
             morphList = morphToList(x)
-            for x in morphList:
-                if x:
-                    snakeDataFrame["YN" + str(x)] = snakeDataFrame["morphs"].apply(lambda y: containsMorph(x,y) )
+            #print(type(morphList))
+            #for all the morphs in the combo list x
+            for z in morphList:
+                #if the current morph has not already had a col created for it
+                if not "YN" + z in snakeDataFrame:
+                    # if the morph is noe empty
+                    if z:
+                        snakeDataFrame["YN" + str(x)] = snakeDataFrame["morphs"].apply(lambda y: containsMorph(z,y) )
         snakeDataFrame.to_csv("/home/nick/Documents/morphMarketHognoseMaximizer/newSnakeDataFrame" + sex)   
+        print("finished creating new DataFrame with new columns")
+        time.sleep(10)
     else:
+        print("found datafiles for snakeDataFrame")
         snakeDataFrame = pd.read_csv("/home/nick/Documents/morphMarketHognoseMaximizer/newSnakeDataFrame" + sex)
+    #print(snakeDataFrame.loc[snakeDataFrame["YNArctic"] == "True"].head(n=10))
     return snakeDataFrame
 
 def getAllSnakesWithTheseTraits(childTraitList):
     maleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportm', names = ["morphs","cost","link"])
     femaleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportf', names = ["morphs","cost","link"])
     #create new columns like ynAnaconda and ynArctic
-    newMaleSnakeDataFrame = createNewColumns(maleSnakeDataFrame,"m")
-    newFemaleSnakeDataFrame = createNewColumns(femaleSnakeDataFrame,"f")
+    print("calling createNewColumns")
+    newMaleSnakeDataFrame = global.maleDataFrame
+    newFemaleSnakeDataFrame = global.femaleDataFrame
+    # newMaleSnakeDataFrame = createNewColumns(maleSnakeDataFrame,"m")
+    # newFemaleSnakeDataFrame = createNewColumns(femaleSnakeDataFrame,"f")
+    #creating blank dataframe to put stuff into
     foundMaleSnakesDataFrame = pd.DataFrame(columns = newMaleSnakeDataFrame.columns)
     #for all of the children
     for x in range(len(childTraitList)):
@@ -65,7 +94,9 @@ def getAllSnakesWithTheseTraits(childTraitList):
             trait = childTraitList[x]
             #print(trait)
             try:
-                foundMaleSnakesDataFrame.append(newMaleSnakeDataFrame.where(newMaleSnakeDataFrame["YN"+str(trait)] == True))
+                concatThis = [foundMaleSnakesDataFrame,newMaleSnakeDataFrame.where(newMaleSnakeDataFrame["YN"+str(trait)] == True)]
+                foundMaleSnakeDataFrame = pd.concat(concatThis)
+                #foundMaleSnakesDataFrame.concat(newMaleSnakeDataFrame.where(newMaleSnakeDataFrame["YN"+str(trait)] == True))
             except KeyError:
                # print("Male directory contained no snakes with the morph " + str(trait) + ". Moving on...")
                 break
@@ -80,7 +111,9 @@ def getAllSnakesWithTheseTraits(childTraitList):
         if y == 0 :
             trait = childTraitList[y]
             try:
-                foundFemaleSnakesDataFrame.append(newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+ str(trait)] == True))
+                concatThis2 = [foundFemaleSnakesDataFrame,newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+str(trait)] == True)]
+                foundFemaleSnakeDataFrame = pd.concat(concatThis2)
+                #foundFemaleSnakesDataFrame.concat(newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+ str(trait)] == True))
             except KeyError:
                 #print("Female directory contained no snakes with the morph" + str(trait) + ". Moving on...")
                 break
@@ -106,7 +139,7 @@ def fixLikelienessElementList(likelienessElementList):
     for x in range(len(likelienessElementList)):
         if x != 0:
             #print(likelienessElementList[x].text)
-            time.sleep(.5)
+            #time.sleep(.5)
             try:
                 likelienessList.append(float(likelienessElementList[x].text.replace("%","")))
             except StaleElementReferenceException:
@@ -269,3 +302,8 @@ def fixGenesElementList(genesElementList):
 
     exportGenes(fixedGenesList)
     return fixedGenesList
+
+def runMeFirst():
+    male = createNewColumns(maleSnakeDataFrame,"m")
+    female = createNewColumns(femaleSnakeDataFrame,"f")
+    return [male, female]

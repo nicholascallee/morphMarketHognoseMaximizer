@@ -16,6 +16,7 @@ from hognoseHelper import averageSnakePrices
 from hognoseHelper import createNewColumns
 from hognoseHelper import exportGenes
 from hognoseHelper import getAllSnakesWithTheseTraits
+from hognoseHelper import runMeFirst
 
 
 
@@ -49,6 +50,7 @@ def grabSnakeComboData(driver):
     for x in range(1,len(likelienessElementList)-1):
         likelieness = fixedLikelienessList[x]
         genes = fixedGenesList[x]
+        print("calling findAvgPriceOfSnake")
         price = findAvgPriceOfSnake(driver, genes)
         #if we found one
         if price != 0:
@@ -131,4 +133,6 @@ def main():
     print("printingReturndataframe")
     print(resultsDataFrame.head(n=10))
     resultsDataFrame.to_csv("//home/nick/Documents/morphMarketHognoseMaximizer/finalSnakeResults")
+
+maleDataFrame, femaleDataFrame = runMeFirst()
 main()
