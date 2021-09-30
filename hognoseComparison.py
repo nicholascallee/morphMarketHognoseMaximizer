@@ -24,8 +24,9 @@ from hognoseHelper import runMeFirst
 def findAvgPriceOfSnake(driver,snake, maleDf, femaleDf):
     #instead of trying to load a fuck ton of pages, just look in the list of snakes we already made dumbass
     snakesWithTheseParticularTraits = getAllSnakesWithTheseTraits(snake, maleDf, femaleDf)
-    if snakesWithTheseParticularTraits == 0:
-        return 0
+    if isinstance(snakesWithTheseParticularTraits,int):
+        if snakesWithTheseParticularTraits == 0:
+            return 0
     else:
         pricesOfSpecificSnake = snakesWithTheseParticularTraits["cost"]
         print("this is the cost of the snakes found in a list: " + str(pricesOfSpecificSnake))
@@ -61,6 +62,9 @@ def grabSnakeComboData(driver, maleDf,femaleDf):
     #print(fixedLikelienessList)
     #print(len(fixedLikelienessList))
     fixedGenesList = fixGenesElementList(genesElementList)
+    print(type(fixedGenesList))
+    if '' in fixedGenesList:
+        fixedGenesList.remove('')
     
     weightedTotalReturn = 0
     print("looking through " + str(len(fixedLikelienessList))+ " snakes")
@@ -69,7 +73,6 @@ def grabSnakeComboData(driver, maleDf,femaleDf):
         likelieness = fixedLikelienessList[0]
         genes = fixedGenesList[0]
         price = findAvgPriceOfSnake(driver, genes, maleDf, femaleDf)
-        print("checking for snake with these genes: " + str(genes))
         #if we found one
         if price != 0:
             print("found snakes with that morph. avg price: " + str(price))
@@ -189,6 +192,8 @@ def main():
     for x in range(len(maleSnakeDataFrame)):
         for y in range(len(femaleSnakeDataFrame)):
             resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame)
+            if not resultDataFrame.empty:
+                print("found snakes for that set of parents: " + resultDataFrame.head())
             resultsDataFrame = resultsDataFrame.append(resultDataFrame)
             theId += 1
             print("finished comparing "+ str(y) +" y " + str(x) + " x " + " combination of snakes out of " + str(len(maleSnakeDataFrame) ) +" x "+ str(len(femaleSnakeDataFrame)) + " y")
