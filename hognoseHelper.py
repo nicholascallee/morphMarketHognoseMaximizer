@@ -28,33 +28,26 @@ def createNewColumns(snakeDataFrame,sex):
             #print(type(morphList))
             #for all the morphs in the combo list x
             for z in x:
-                print("if " + str(z) + " isnt already in the list of morphs then add it")
+                #print("if " + str(z) + " isnt already in the list of morphs then add it")
                 if not z in listOfAllMorphs:
                     if z != '':
                         if z[0] == " ":
                             z = z[1:]
                         listOfAllMorphs.append(z)
-                else:
-                    print("list of all morphs " + str(listOfAllMorphs))
-                    print(str(z) + " was already in the list of morphs")
+                # else:
+                    #print("list of all morphs " + str(listOfAllMorphs))
+                    #print(str(z) + " was already in the list of morphs")
                 #if the current morph has not already had a col created for it
                 # if not "YN" + z in snakeDataFrame:
                 #     # if the morph is noe empty
                 #     if z:
                 #         snakeDataFrame["YN" + str(z)] = snakeDataFrame["morphs"].apply(lambda y: containsMorph(z,y) )
-        print(listOfAllMorphs)
-        
-        
+        #print(listOfAllMorphs)
         for morph in listOfAllMorphs:
             snakeDataFrame["YN" + morph] = snakeDataFrame["morphs"].apply(lambda y: containsMorph(morph,y))
         
         snakeDataFrame.to_csv("/home/nick/Documents/morphMarketHognoseMaximizer/newSnakeDataFrame" + sex)   
         print("finished creating new DataFrame with new columns for " + sex)
-        lavenderSnakes = snakeDataFrame.loc[snakeDataFrame["YNLavender"] == True]
-        print(len(lavenderSnakes))
-        lavenderAndHetSableSnakes = lavenderSnakes.loc[snakeDataFrame["YNHet Sable"] == True]
-        print(lavenderAndHetSableSnakes.head(n=1))
-        time.sleep(10)
     else:
         print("found datafiles for snakeDataFrame")
         snakeDataFrame = pd.read_csv("/home/nick/Documents/morphMarketHognoseMaximizer/newSnakeDataFrame" + sex)
@@ -227,12 +220,11 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
     maleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportm', names = ["morphs","cost","link"])
     femaleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportf', names = ["morphs","cost","link"])
     #create new columns like ynAnaconda and ynArctic
-    #print("calling createNewColumns")
-    #print(newMaleSnakeDataFrame.columns)
     #print(newMaleSnakeDataFrame["YNArctic"])
     # newMaleSnakeDataFrame = createNewColumns(maleSnakeDataFrame,"m")
     # newFemaleSnakeDataFrame = createNewColumns(femaleSnakeDataFrame,"f")
     #creating blank dataframe to put stuff into
+    #print(type(maleDf))
     foundMaleSnakesDataFrame = pd.DataFrame(columns = maleDf.columns)
     if '' in childTraitList:
         childTraitList.remove('')
@@ -248,48 +240,37 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
                 trait = childTraitList[x]
                 #print("YN" + trait)
                 ynTrait = "YN" + trait
-                #print(trait)
-                try:
-                    print(len(maleDf))
-                    print(len(maleDf[maleDf[ynTrait] == True]))
-                    print(maleDf[maleDf[ynTrait] == True])
-                    concatThis = [foundMaleSnakesDataFrame,maleDf[maleDf[ynTrait] == True]]
-                    foundMaleSnakesDataFrame = pd.concat(concatThis)
-                    print(type(foundMaleSnakesDataFrame))
-                    print(len(foundMaleSnakesDataFrame))
-                    for x in foundMaleSnakesDataFrame["YNArctic"]:
-                        if x == True:
-                            print(str(x))
-                    print(foundMaleSnakesDataFrame["YNLavender"].loc[foundMaleSnakesDataFrame["YNLavender"] == True].values)
-                    #foundMaleSnakesDataFrame.concat(newMaleSnakeDataFrame.where(newMaleSnakeDataFrame["YN"+str(trait)] == True))
-                except KeyError:
-                    print("Male directory contained no snakes with the morph " + str(trait) + ". Moving on...")
-                    break
-                if not foundMaleSnakesDataFrame.empty:
-                    #print(foundMaleSnakeDataFrame.columns)
-                    print("found the trait " + trait + " in some of the male snake instances")
-                else:
-                    print("didnt find the trait: " + str(trait) + " in the male snake instances")
-                    break
+                if ynTrait != "YN":
+                    #print(trait)
+                    try:
+                        concatThis = [foundMaleSnakesDataFrame,maleDf[maleDf[ynTrait] == True]]
+                        foundMaleSnakesDataFrame = pd.concat(concatThis)
+                    except KeyError:
+                        print("Male directory contained no snakes with the morph " + str(trait) + ". Moving on...")
+                        break
+                    # if not foundMaleSnakesDataFrame.empty:
+                    #     #print(foundMaleSnakeDataFrame.columns)
+                    #     print("found the trait " + trait + " in some of the male snake instances")
+                    if foundMaleSnakesDataFrame.empty:
+                        print("didnt find the trait: " + str(trait) + " in the male snake instances")
+                        break
             #if second or later
             if x > 0:
                 if childTraitList[x] !='Het':
                     trait = childTraitList[x]
                     ynTrait = "YN" + trait
-                    print("checking trait " + trait + " against the subset of snakes found with previous snake")
-                    print(len(foundMaleSnakesDataFrame))
-                    print(len(foundMaleSnakesDataFrame['YN'+ trait]))
-                    print(len(foundMaleSnakesDataFrame['YNHet Lavender']))
-                    foundMaleSnakesDataFrame.drop(foundMaleSnakesDataFrame.loc[foundMaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
-                    if not foundMaleSnakesDataFrame.empty:
-                        print("still have snakes that match this morph combo " + str(childTraitList))
-                    else:
-                        print("checking the trait " +trait+ " removed all the snakes from the subset. no snakes of that type found")
-                        break
-    if not foundMaleSnakesDataFrame.empty:
-        print("found matches against males for the snake with these traits: " + str(childTraitList ))
-    else:
-        print("no mactches found in the male list")
+                    if ynTrait != "YN":
+                        foundMaleSnakesDataFrame.drop(foundMaleSnakesDataFrame.loc[foundMaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
+                        # if not foundMaleSnakesDataFrame.empty:
+                        #     print("still have snakes that match this morph combo " + str(childTraitList))
+                        # else:
+                        if foundMaleSnakesDataFrame.empty:
+                            print("checking the trait " +trait+ " removed all the snakes from the subset. no snakes of that type found")
+                            break
+    # if not foundMaleSnakesDataFrame.empty:
+    #     print("found matches against males for the snake with these traits: " + str(childTraitList ))
+    # else:
+    #     print("no mactches found in the male list")
 
     foundFemaleSnakesDataFrame = pd.DataFrame(columns = femaleDf.columns)
     for y in range(len(childTraitList)):
@@ -297,29 +278,32 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
         if y == 0 :
             if childTraitList[y] != 'Het':
                 trait = childTraitList[y]
-                print("YN" + trait)
-                try:
-                    concatThis2 = [foundFemaleSnakesDataFrame,femaleDf[femaleDf["YN"+str(trait)] == True]]
-                    #print(concatThis2)
-                    foundFemaleSnakesDataFrame = pd.concat(concatThis2)
-                    #foundFemaleSnakesDataFrame.concat(newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+ str(trait)] == True))
-                except KeyError:
-                    print("Female directory contained no snakes with the morph" + str(trait) + ". Moving on...")
-                    break
-                if not foundFemaleSnakesDataFrame.empty:
-                    print("found the trait " + trait + " in some of the female snake instances")
+                ynTrait = "YN" + trait
+                if ynTrait != "YN":
+                    #print("YN" + trait)
+                    try:
+                        concatThis2 = [foundFemaleSnakesDataFrame,femaleDf[femaleDf["YN"+str(trait)] == True]]
+                        #print(concatThis2)
+                        foundFemaleSnakesDataFrame = pd.concat(concatThis2)
+                        #foundFemaleSnakesDataFrame.concat(newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+ str(trait)] == True))
+                    except KeyError:
+                        print("Female directory contained no snakes with the morph" + str(trait) + ". Moving on...")
+                        break
+                    # if not foundFemaleSnakesDataFrame.empty:
+                    #     print("found the trait " + trait + " in some of the female snake instances")
         #if second or later
         if y >0:
             if childTraitList[y] != 'Het':
                 trait = childTraitList[y]
                 ynTrait = "YN" + trait
-                foundFemaleSnakesDataFrame.drop(foundFemaleSnakesDataFrame.loc[foundFemaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
-                if not foundFemaleSnakesDataFrame.empty:
-                    print("still have snakes that match this morph combo " + str(childTraitList))
-    if not foundFemaleSnakesDataFrame.empty:
-        print("found matches against females for the snake with these traits: " + str(childTraitList ))
-    else: 
-        print("found no matches in the female list")
+                if ynTrait != "YN":
+                    foundFemaleSnakesDataFrame.drop(foundFemaleSnakesDataFrame.loc[foundFemaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
+                    # if not foundFemaleSnakesDataFrame.empty:
+                    #     print("still have snakes that match this morph combo " + str(childTraitList))
+    # if not foundFemaleSnakesDataFrame.empty:
+    #     print("found matches against females for the snake with these traits: " + str(childTraitList ))
+    # if foundFemaleSnakesDataFrame.empty: 
+    #     print("found no matches in the female list")
 
     if not foundMaleSnakesDataFrame.empty:
         if not foundFemaleSnakesDataFrame.empty:
@@ -329,7 +313,6 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
                     if (isinstance(value,float)):
                         if math.isnan(value):
                             foundSnakesDataFrame.drop([count], inplace = True)
-                            foundSnakesDataFrame.reset_index(inplace = True, drop = True)
                     else:
                         count += 1
                 foundSnakesDataFrame.reset_index(inplace = True, drop = True)
