@@ -10,6 +10,7 @@ from selenium.common.exceptions import StaleElementReferenceException
 import os.path
 from os import path
 import sys
+import ast
 from hognoseHelper import fixLikelienessElementList
 from hognoseHelper import fixGenesElementList
 from hognoseHelper import fixGeneString
@@ -18,6 +19,8 @@ from hognoseHelper import createNewColumns
 from hognoseHelper import exportGenes
 from hognoseHelper import getAllSnakesWithTheseTraits
 from hognoseHelper import runMeFirst
+from hognoseHelper import getListOfAllMorphs
+from hognoseHelper import turnIntoList
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -26,7 +29,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 def findAvgPriceOfSnake(driver,snake, maleDf, femaleDf):
     #instead of trying to load a fuck ton of pages, just look in the list of snakes we already made dumbass
-    #print(type(maleDf))
+    #print("in find avg price of snake" + str(type(snake)))
     snakesWithTheseParticularTraits = getAllSnakesWithTheseTraits(snake, maleDf, femaleDf)
     if isinstance(snakesWithTheseParticularTraits,int):
         if snakesWithTheseParticularTraits == 0:
@@ -39,7 +42,7 @@ def findAvgPriceOfSnake(driver,snake, maleDf, femaleDf):
 
 
 
-def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement):
+def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAllMorphs):
     returner = []
     #snakeChildren = [likelieness morph avg price]
     snakeChildren = []
@@ -74,16 +77,23 @@ def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement):
     #print(fixedLikelienessList)
     #print(len(fixedLikelienessList))
     fixedGenesList = fixGenesElementList(genesElementList)
-    #print(type(fixedGenesList))
-    if '' in fixedGenesList:
-        fixedGenesList.remove('')
+    #print("fixedGenesList " + str(fixedGenesList))
     
+    
+    
+    
+    perfectGenesList = []
+    for x in fixedGenesList:
+        perfectGenesList.append(turnIntoList(x, listOfAllMorphs))
+    #print(perfectGenesList)
     weightedTotalReturn = 0
     #print("looking through " + str(len(fixedLikelienessList))+ " snakes")
-    
+    print("the combo makes " + str(len(fixedLikelienessList)) + " children-------------------------------------------------------------------")
+    print("")
+    print("")
     if len(fixedLikelienessList) == 1:
         likelieness = fixedLikelienessList[0]
-        genes = fixedGenesList[0]
+        genes = perfectGenesList[0]
         #print(type(maleDf))
         price = findAvgPriceOfSnake(driver, genes, maleDf, femaleDf)
         #if we found one
@@ -96,29 +106,29 @@ def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement):
         #for x in range len of child list
         #print(len(fixedLikelienessList))
         #print("len ^^^")
-        print("thie combo makes " + str(len(fixedLikelienessList)) + " children")
         for x in range(len(fixedLikelienessList)):
             #print("going thru snakes with these genes: " + str(fixedGenesList[x]))
             if x != len(fixedLikelienessList):
                 #print("got to here")
                 #print(x)
                 likelieness = fixedLikelienessList[x]
-                genes = fixedGenesList[x]
-                print("checking for snake with these genes: " + str(genes))
+                genes = perfectGenesList[x]
+                #print("checking for snake with these genes: " + str(genes))
                 #print("calling findAvgPriceOfSnake")
+                #print("type in grab snake combo data " + str(type(genes)))
                 price = findAvgPriceOfSnake(driver, genes, maleDf, femaleDf)
-                #if we found one
+                #if we found 
                 if price != 0:
                     print("found snakes with these genes: "+str(genes) +". avg price: " + str(price))
                     weightedTotalReturn += float(likelieness) * float(price)
                 else:
                     print("looked through snake with these genes: " +str(genes) + " and found no results")
 
-    returner = [fixedGenesList,weightedTotalReturn] 
+    returner = [perfectGenesList,weightedTotalReturn] 
     return returner
     
 
-def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf):
+def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listOfAllMorphs):
     #gets all data out of frames and calculates a comparison of snakes then gets combo data with a fn
     for z in range(len(snakeMFrame)):
         maleMorphList = snakeMFrame[z]
@@ -189,7 +199,7 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf):
     time.sleep(1)
     #print("calling grabSnakeComboData")
     #print(type(maleDf))
-    results = grabSnakeComboData(driver,maleDf,femaleDf,calculateButtonElement)
+    results = grabSnakeComboData(driver,maleDf,femaleDf,calculateButtonElement, listOfAllMorphs)
     d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]]}
     returningDataFrame = df(data = d)
     #print("printing children")
@@ -207,6 +217,7 @@ def main():
     theId = 1
     # print(maleSnakeDataFrame.head(n=10))
     # print(femaleSnakeDataFrame.head(n=10))
+    listOfAllMorphs = getListOfAllMorphs(maleSnakeDataFrame,femaleSnakeDataFrame)
     finalNumber = float(len(maleSnakeDataFrame) * float(len(femaleSnakeDataFrame)))
     count = 0
     dontGo = 0
@@ -228,7 +239,7 @@ def main():
             #         dontGo = 1
             #     #get all the instances with that male
             if dontGo == 0:
-                resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame)
+                resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs)
                 # if not resultDataFrame.empty:
                 #     print("found snakes for that set of parents: " + str(resultDataFrame.head()))
                 resultsDataFrame = resultsDataFrame.append(resultDataFrame)

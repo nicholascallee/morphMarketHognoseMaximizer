@@ -54,14 +54,9 @@ def createNewColumns(snakeDataFrame,sex):
     #print(snakeDataFrame.loc[snakeDataFrame["YNArctic"] == "True"].head(n=10))
     return snakeDataFrame
 
-def morphToList(stringOfMorphs):
-    if stringOfMorphs[0] == " ":
-        stringOfMorphs = StringOfMorphs[1:]
-    stringOfMorphs = stringOfMorphs.replace("['","").replace("']","").replace("100% ","").replace("', '"," ").replace(" Pos","").replace("Pos","").replace("Normal","").replace("'', ","")
-    stringOfMorphsFixed = fixGeneString(stringOfMorphs)
-    return stringOfMorphsFixed
 
 def fixGeneString(geneString):
+    print(geneString)
     geneString = geneString.replace(" 66%","").replace("100% ","").replace("66%","").replace("100%","").replace("50%","")
     #print("geneString after replaces" + geneString)
     if not geneString:
@@ -70,6 +65,11 @@ def fixGeneString(geneString):
     geneList = []
     if geneString[0] ==" ":
         geneString = geneString[1:]
+        
+        
+    
+        
+        
     geneHolder = ""
     noAddition = 0
     for x in range(len(geneString)):
@@ -83,6 +83,10 @@ def fixGeneString(geneString):
             if x == len(geneString)-1:
                 geneList.append(geneHolder)
                 break
+            if geneString[x+1:x+x+4] == "Reve":
+                geneList.append(geneHolder)
+                geneHolder = ""
+                noAddition = 1
             if geneString[x+1] == "J":
                 geneList.append(geneHolder)
                 geneHolder = ""
@@ -92,70 +96,57 @@ def fixGeneString(geneString):
                     geneList.append(geneHolder)
                     geneHolder = ""
                     noAddition = 1
-            if geneString[x+1] == "H":
-                if geneString[x+2] =="e":
-                    if geneString[x+3] =="t":
-                        geneList.append(geneHolder)
-                        geneHolder = ""
-                        noAddition = 1
-            if geneString[x+1] =="R":
-                if geneString[x+2] == "B":
-                    geneList.append(geneHolder)
-                    geneHolder = ""
-                    noAddition = 1
-            if geneString[x+1] == "T":
-                if geneString[x+2] == "i":
-                    geneList.append(geneHolder)
-                    geneHolder = ""
-                    noAddition = 1
-            if geneString[x+1] =="S":
-                if geneString[x+2] == "u":
-                    geneList.append(geneHolder)
-                    geneHolder = ""
-                    noAddition = 1
+            if geneString[x+1: x+3] == "Het":
+                geneList.append(geneHolder)
+                geneHolder = ""
+                noAddition = 1
+            if geneString[x+1:x+2] =="RB":
+                geneList.append(geneHolder)
+                geneHolder = ""
+                noAddition = 1
+            if geneString[x+1:x+2] == "Ti":
+                geneList.append(geneHolder)
+                geneHolder = ""
+                noAddition = 1
+            if geneString[x+1:x+2] =="Su":
+                geneList.append(geneHolder)
+                geneHolder = ""
+                noAddition = 1
             if geneString[x+1] == "N":
                 geneList.append(geneHolder)
                 geneHolder = ""
                 noAddition = 1
-            if geneString[x+1] == "A":
-                if geneString[x+2] == "l":
-                    if geneString[x-1] != "d":
-                        if geneString[x-2] != "e":
+            if geneString[x+1:x+2] == "Al":
+                if geneString[x-1] != "d":
+                    if geneString[x-2] != "e":
+                        geneList.append(geneHolder)
+                        geneHolder = ""
+                        noAddition = 1
+            if geneString[x+1:x+2] == "Pi":
+                geneList.append(geneHolder)
+                geneHolder = ""
+                noAddition = 1
+            if geneString[x+1:x+4] == "Lave":
+                if geneString[x-1] != "t":
+                    if geneString[x-2] != "e":
+                        if geneString[x-3] != "H":
                             geneList.append(geneHolder)
                             geneHolder = ""
                             noAddition = 1
-            if geneString[x+1] == "P":
-                if geneString[x+2] == "i":
-                    geneList.append(geneHolder)
-                    geneHolder = ""
-                    noAddition = 1
-            if geneString[x+1] == "L":
-                if geneString[x+2] == "a":
-                    if geneString[x+3] == "v":
-                        if geneString[x+4] == "e":
-                            if geneString[x-1] != "t":
-                                if geneString[x-2] != "e":
-                                    if geneString[x-3] != "H":
-                                        geneList.append(geneHolder)
-                                        geneHolder = ""
-                                        noAddition = 1
                 if geneString[x+2] == "e":
                     if geneString[x-1] != "r":
                         if geneString[x-2] != "e":
                             geneList.append(geneHolder)
                             geneHolder = ""
                             noAddition = 1
-            if geneString[x+1] == "P":
-                if geneString[x+2] == "u":
-                    if geneString[x+3] == "r":
-                        geneList.append(geneHolder)
-                        geneHolder = ""
-                        noAddition = 1
-                if geneString[x+2] == "e":
-                    if geneString[x+3] == "m":
-                        geneList.append(geneHolder)
-                        geneHolder = ""
-                        noAddition = 1
+            if geneString[x+1:x+3] == "Pur":
+                    geneList.append(geneHolder)
+                    geneHolder = ""
+                    noAddition = 1
+            if geneString[x+2:x+3] == "em":
+                geneList.append(geneHolder)
+                geneHolder = ""
+                noAddition = 1
             if geneString[x-1] == "a":
                 if geneString[x-2] == "d":
                     if geneString[x-3] == "n":
@@ -163,21 +154,17 @@ def fixGeneString(geneString):
                             geneList.append(geneHolder)
                             geneHolder = ""
                             noAddition = 1
-            if geneString[x+1] == "E":
-                if geneString[x+2] == "x":
-                    if geneString[x+3] == "t":
-                        geneList.append(geneHolder)
-                        geneHolder = ""
-                        noAddition = 1
-            if geneString[x+1] == "S":
-                if geneString[x+2] == "a":
-                    if geneString[x+3] == "b":
-                        if geneString[x-1] != "t":
-                            if geneString[x-2] != "e":
-                                if geneString[x-3] != "H":
-                                    geneList.append(geneHolder)
-                                    geneHolder = ""
-                                    noAddition = 1
+            if geneString[x+1:x+3] == "Ext":
+                geneList.append(geneHolder)
+                geneHolder = ""
+                noAddition = 1
+            if geneString[x+1:x+3] == "Sab":
+                if geneString[x-1] != "t":
+                    if geneString[x-2] != "e":
+                        if geneString[x-3] != "H":
+                            geneList.append(geneHolder)
+                            geneHolder = ""
+                            noAddition = 1
             if geneString[x-1] == "c":
                 if geneString[x-2] == "i":
                     if geneString[x-3] == "t":
@@ -185,14 +172,13 @@ def fixGeneString(geneString):
                             geneList.append(geneHolder)
                             geneHolder = ""
                             noAddition = 1
-            if geneString[x+1] == "A":
-                if geneString[x+2] =="r":
-                    if geneString[x-1] != "r":
-                        if geneString[x-2] != "e":
-                            if geneString[x-3] != "p":
-                                geneList.append(geneHolder)
-                                geneHolder = ""
-                                noAddition = 1
+            if geneString[x+1:x+2] == "Ar":
+                if geneString[x-1] != "r":
+                    if geneString[x-2] != "e":
+                        if geneString[x-3] != "p":
+                            geneList.append(geneHolder)
+                            geneHolder = ""
+                            noAddition = 1
                 if geneString[x+2] == "n":
                     if geneString[x-1] != "r":
                         if geneString[x-2] != "e":
@@ -224,7 +210,7 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
     # newMaleSnakeDataFrame = createNewColumns(maleSnakeDataFrame,"m")
     # newFemaleSnakeDataFrame = createNewColumns(femaleSnakeDataFrame,"f")
     #creating blank dataframe to put stuff into
-    #print(type(maleDf))
+    #print("in get all snakes with these traits" + str(type(childTraitList)))
     foundMaleSnakesDataFrame = pd.DataFrame(columns = maleDf.columns)
     if '' in childTraitList:
         childTraitList.remove('')
@@ -408,20 +394,66 @@ def exportGenes(geneList):
         f.close()
         return True
 
+def getListOfAllMorphs(maleSnakeDataFrame,femaleSnakeDataFrame):
+    listOfAllMorphs = []
+    for x in maleSnakeDataFrame["morphs"]:
+        x = x.replace(" 66%","").replace("100% ","").replace("66%","").replace("100%","").replace("50%","").replace("100% ","").replace(" Pos","").replace("Pos","").replace("Normal","")
+        x = ast.literal_eval(x)
+        #print(x)
+        
+        #print(type(morphList))
+        #for all the morphs in the combo list x
+        for z in x:
+            #print("if " + str(z) + " isnt already in the list of morphs then add it")
+            if not z in listOfAllMorphs:
+                if z != '':
+                    if z[0] == " ":
+                        z = z[1:]
+                    listOfAllMorphs.append(z)
+    for x in femaleSnakeDataFrame["morphs"]:
+        x = x.replace(" 66%","").replace("100% ","").replace("66%","").replace("100%","").replace("50%","").replace("100% ","").replace(" Pos","").replace("Pos","").replace("Normal","")
+        x = ast.literal_eval(x)
+        #print(x)
+        
+        #print(type(morphList))
+        #for all the morphs in the combo list x
+        for z in x:
+            #print("if " + str(z) + " isnt already in the list of morphs then add it")
+            if not z in listOfAllMorphs:
+                if z != '':
+                    if z[0] == " ":
+                        z = z[1:]
+                    listOfAllMorphs.append(z)
+    return listOfAllMorphs
+
+def turnIntoList(x,listOfAllGenes):
+    geneList = []
+    geneHolder = ""
+    #print(x)
+    for y in x:
+        if not geneHolder in listOfAllGenes:
+            #print("not in list of all genes")
+            geneHolder  = geneHolder + y
+        else:
+            #print("was in list of all genes")
+            geneList.append(geneHolder)
+            geneHolder = ""
+    if geneHolder in listOfAllGenes:
+        geneList.append(geneHolder)
+    time.sleep(1)
+    return geneList
+            
+
 def fixGenesElementList(genesElementList):
+    #print("genesElementList[0].text" + str(genesElementList[1].text))
     fixedGenesList = []
     partiallyFixedGenesList = []
     for x in range(len(genesElementList)):
         if x != 0:    
             #print(genesElementList[x].text)
-            partiallyFixedGenesList.append(genesElementList[x].text)
-    for y in range(len(partiallyFixedGenesList)):
-        fixedGenesList.append(partiallyFixedGenesList[y].replace(" 100%","").replace(" 50%","").replace(" Pos","").replace("50% " , ""))
-    for z in range(len(fixedGenesList)):
-        fixedGenesList[z] = fixGeneString(fixedGenesList[z])
-
-    exportGenes(fixedGenesList)
-    return fixedGenesList
+            partiallyFixedGenesList.append(genesElementList[x].text.replace(" 100%","").replace(" 50%","").replace(" Pos","").replace("50% " , "").replace("100% ",""))
+    #print(type(partiallyFixedGenesList))
+    return partiallyFixedGenesList
 
 def runMeFirst(maleSnakeDataFrame, femaleSnakeDataFrame):
     male = createNewColumns(maleSnakeDataFrame,"m")
