@@ -12,6 +12,7 @@ from os import path
 import sys
 import ast
 import math
+from selenium.common.exceptions import NoSuchElementException     
 
 def createNewColumns(snakeDataFrame,sex):
     if (path.exists("/home/nick/Documents/morphMarketHognoseMaximizer/newSnakeDataFrame" + sex) != True):
@@ -202,7 +203,7 @@ def fixGeneString(geneString):
 
     return geneList
 
-def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
+def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf,num):
     maleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportm', names = ["morphs","cost","link"])
     femaleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportf', names = ["morphs","cost","link"])
     #create new columns like ynAnaconda and ynArctic
@@ -232,13 +233,13 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
                         concatThis = [foundMaleSnakesDataFrame,maleDf[maleDf[ynTrait] == True]]
                         foundMaleSnakesDataFrame = pd.concat(concatThis)
                     except KeyError:
-                        print("Male directory contained no snakes with the morph " + str(trait) + ". Moving on...")
+                        logMe("Male directory contained no snakes with the morph " + str(trait) + ". Moving on...",num)
                         break
                     # if not foundMaleSnakesDataFrame.empty:
                     #     #print(foundMaleSnakeDataFrame.columns)
                     #     print("found the trait " + trait + " in some of the male snake instances")
                     if foundMaleSnakesDataFrame.empty:
-                        print("didnt find the trait: " + str(trait) + " in the male snake instances")
+                        logMe("didnt find the trait: " + str(trait) + " in the male snake instances",num)
                         break
             #if second or later
             if x > 0:
@@ -251,7 +252,7 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
                         #     print("still have snakes that match this morph combo " + str(childTraitList))
                         # else:
                         if foundMaleSnakesDataFrame.empty:
-                            print("checking the trait " +trait+ " removed all the snakes from the subset. no snakes of that type found")
+                            logMe("checking the trait " +trait+ " removed all the snakes from the subset. no snakes of that type found",num)
                             break
     # if not foundMaleSnakesDataFrame.empty:
     #     print("found matches against males for the snake with these traits: " + str(childTraitList ))
@@ -273,7 +274,7 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf):
                         foundFemaleSnakesDataFrame = pd.concat(concatThis2)
                         #foundFemaleSnakesDataFrame.concat(newFemaleSnakeDataFrame.where(newFemaleSnakeDataFrame["YN"+ str(trait)] == True))
                     except KeyError:
-                        print("Female directory contained no snakes with the morph" + str(trait) + ". Moving on...")
+                        logMe("Female directory contained no snakes with the morph" + str(trait) + ". Moving on...",num)
                         break
                     # if not foundFemaleSnakesDataFrame.empty:
                     #     print("found the trait " + trait + " in some of the female snake instances")
@@ -425,6 +426,35 @@ def getListOfAllMorphs(maleSnakeDataFrame,femaleSnakeDataFrame):
                         z = z[1:]
                     listOfAllMorphs.append(z)
     return listOfAllMorphs
+
+def logMe(string,processId):
+    if path.exists('/home/nick/Documents/morphMarketHognoseMaximizer/processLog' + str(processId)):
+        f = open('/home/nick/Documents/morphMarketHognoseMaximizer/processLog' + str(processId), 'a')
+        # create the csv writer
+        writer = csv.writer(f)
+        # write a row to the csv file
+        writer.writerow([string])
+        # close the file
+        f.close()
+        return True
+    else:
+        # open the file in the write mode
+        f = open('/home/nick/Documents/morphMarketHognoseMaximizer/processLog' + str(processId), 'w')
+        # create the csv writer
+        writer = csv.writer(f)
+        # write a row to the csv file
+        writer.writerow([string])
+        # close the file
+        f.close()
+        return True
+
+   
+def checkIfElementExistsByCssSelector(driver,cssSelector):
+    try:
+        driver.find_element(By.CSS_SELECTOR,cssSelector)
+        return True
+    except NoSuchElementException:
+        return False
 
 def turnIntoList(x,listOfAllGenes):
     geneList = []
