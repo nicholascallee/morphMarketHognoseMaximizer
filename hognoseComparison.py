@@ -24,6 +24,7 @@ from hognoseHelper import runMeFirst
 from hognoseHelper import getListOfAllMorphs
 from hognoseHelper import checkIfElementExistsByCssSelector
 from hognoseHelper import turnIntoList
+from hognoseHelper import exportResults
 from hognoseHelper import logMe
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
@@ -49,7 +50,7 @@ def spawn(num, return_dict, maleSnakeDataFrame, femaleSnakeDataFrame, maleDataFr
                 #print(maleSnakeDataFrame.iloc[x])
                 resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs,num)
                 # if not resultDataFrame.empty:
-                #     print("found snakes for that set of parents: " + str(resultDataFrame.head()))
+                exportResults((resultDataFrame),num)
                 resultsDataFrame = resultsDataFrame.append(resultDataFrame)
                 resultsDataFrame.reset_index(inplace = True, drop = True)
                 #print(resultsDataFrame.head(n=10))
@@ -254,7 +255,7 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
     
     dontGoFurther = 0
     while(checkIfElementExistsByCssSelector(driver,".tablesorter-headerRow") == False):
-        logMe("couldnt find the element in the calulation page. trying again")
+        logMe("couldnt find the element in the calulation page. trying again",num)
         dontGoFurther = 1
         results = grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAllMorphs,num)
         d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]]}

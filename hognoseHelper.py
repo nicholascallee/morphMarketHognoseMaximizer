@@ -448,7 +448,29 @@ def logMe(string,processId):
         f.close()
         return True
 
-   
+def exportResults(dataFrame,processId):
+    string = dataFrame[0]
+    if path.exists('/home/nick/Documents/morphMarketHognoseMaximizer/resultsDataFrame' + str(processId)):
+        f = open('/home/nick/Documents/morphMarketHognoseMaximizer/resultsDataFrame' + str(processId), 'a')
+        # create the csv writer
+        writer = csv.writer(f)
+        # write a row to the csv file
+        writer.writerow([string])
+        # close the file
+        f.close()
+        return True
+    else:
+        # open the file in the write mode
+        f = open('/home/nick/Documents/morphMarketHognoseMaximizer/resultsDataFrame' + str(processId), 'w')
+        # create the csv writer
+        writer = csv.writer(f)
+        # write a row to the csv file
+        writer.writerow([string])
+        # close the file
+        f.close()
+        return True
+
+  
 def checkIfElementExistsByCssSelector(driver,cssSelector):
     try:
         driver.find_element(By.CSS_SELECTOR,cssSelector)
