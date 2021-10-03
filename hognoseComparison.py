@@ -45,14 +45,34 @@ def spawn(num, return_dict, maleSnakeDataFrame, femaleSnakeDataFrame, maleDataFr
     for x in range(len(maleSnakeDataFrame)):
         for y in range(len(femaleSnakeDataFrame)):
             #dataframe of males that are the same as male in question
+            morphsInQuestionM = list(maleSnakeDataFrame["morphs"].iloc[x])
+            morphsInQuestionF = list(femaleSnakeDataFrame["morphs"].iloc[y])
+            resultsDataFrameMorphsm = list(resultsDataFrame["maleMorphs"])
+            counter = 0
+            indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM = []
+            for maleMorphCombo in resultsDataFrameMorphsM:
+                #print("type of male morph combo" + str(type(maleMorphCombo)))
+                if maleMorphCombo == morphsInQuestionM:
+                    indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM.append(counter)
+                counter+= 1
+            
+            resultsDataFrameMorphsFWhereContainsMorphsInQuestionM = list(resultsDataFrame["femaleMorphs"].iloc[indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM])
+            if len(resultsDataFrameMorphsFWhereContainsMorphsInQuestionM) > 0:
+                dontGo = 1
             #     #get all the instances with that male
             if dontGo == 0:
                 #print(maleSnakeDataFrame.iloc[x])
                 resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs,num)
-                # if not resultDataFrame.empty:
-                exportResults((resultDataFrame),num)
-                resultsDataFrame = resultsDataFrame.append(resultDataFrame)
-                resultsDataFrame.reset_index(inplace = True, drop = True)
+                try:
+                    print("exporting results")
+                    logMe(resultDataFrame[0],num)
+                    exportResults((resultDataFrame),num)
+                    resultsDataFrame = resultsDataFrame.append(resultDataFrame)
+                    resultsDataFrame.reset_index(inplace = True, drop = True)
+                except:
+                    print("couldnt find an instance in resultsDataFrame")
+                    logMe("couldnt find an instance in resultsDataFrame",num)
+                    
                 #print(resultsDataFrame.head(n=10))
                 theId += 1
                 logMe("snake combination number " + str(count) + " out of " + str(finalNumber) + " completed.",num)
@@ -170,20 +190,20 @@ def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAll
 def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listOfAllMorphs,num):
     #gets all data out of frames and calculates a comparison of snakes then gets combo data with a fn
     for z in range(len(snakeMFrame)):
-        maleMorphList = snakeMFrame[z+1]
+        maleMorphList = snakeMFrame[z]
         maleMorphList = maleMorphList.split(",")
         for x in range(len(maleMorphList)):
             maleMorphList[x] = maleMorphList[x].replace("[","").replace("]","").replace("'","").replace("100%","").replace("Pos ","")
-        maleCost = snakeMFrame[z+2]
-        maleLink = snakeMFrame[z+3]
+        maleCost = snakeMFrame[z+1]
+        maleLink = snakeMFrame[z+2]
         break
     for a in range(len(snakeFFrame)):
-        femaleMorphList = snakeFFrame[a+1]
+        femaleMorphList = snakeFFrame[a]
         femaleMorphList = femaleMorphList.split(",")
         for x in range(len(femaleMorphList)):
             femaleMorphList[x] = femaleMorphList[x].replace("[","").replace("]","").replace("'","").replace("100%","").replace("Pos ","")
-        femaleCost = snakeFFrame[a+2]
-        femaleLink = snakeFFrame[a+3]
+        femaleCost = snakeFFrame[a+1]
+        femaleLink = snakeFFrame[a+2]
         break
     
     
@@ -247,9 +267,10 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
     calculateButtonCssSelector = ".tooltip-wrapper > button:nth-child(1)"
     calculateButtonElement = driver.find_element(By.CSS_SELECTOR,calculateButtonCssSelector)
     calculateButtonElement.click()
-    time.sleep(1)
+    time.sleep(2)
     #check for error page
     while (checkIfElementExistsByCssSelector(driver,"body > h3:nth-child(1)") == True):
+        logMe("checking for error page",num)
         time.sleep(2)
         driver.refresh()
     
@@ -271,18 +292,15 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
         results = grabSnakeComboData(driver,maleDf,femaleDf,calculateButtonElement, listOfAllMorphs,num)
         d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]]}
         returningDataFrame = df(data = d)
-        #print("printing children")
-        #print(returningDataFrame["children"].head())
-        #print("returning returningDataFrame from compare snakes")
         return returningDataFrame
 
 
 def main():
-    multiThread = 1
+    multiThread = 0
     maleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportm', names = ["morphs","cost","link"])
     femaleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportf', names = ["morphs","cost","link"])
     maleDataFrame, femaleDataFrame = runMeFirst(maleSnakeDataFrame,femaleSnakeDataFrame)
-    splits = 2
+    splits = 1
     
     if multiThread == 1:
         #split male and female data frame into 6 different pieces
@@ -295,19 +313,32 @@ def main():
         manager = multiprocessing.Manager()
         return_dict = manager.dict()
         jobs =[]
+        count = 0
         for n in range(splits):
             for o in range(splits):
                 ret_value = multiprocessing.Value("d", 0.0, lock=False)
-                p = multiprocessing.Process(target=spawn, args=[o+1*(n+1), return_dict, slicesOfMaleDataFrame[n], slicesOfFemaleDataFrame[o], maleSnakeDataFrame, femaleSnakeDataFrame])
+                p = multiprocessing.Process(target=spawn, args=[count, return_dict, slicesOfMaleDataFrame[n], slicesOfFemaleDataFrame[o], maleSnakeDataFrame, femaleSnakeDataFrame])
                 p.start()
                 jobs.append(p)
+                count += 1
             
             for proc in jobs:
                proc.join()
             print(return_dict.values())
+        resultsDataFrame = df(columns=("id","maleMorphs","femaleMorphs","children","score","snakeLinks"))
+        for x in range(count+1):
+            holderDataFrame = return_dict[x]
+            resultsDataFrame = resultsDataFrame.append(holderDataFrame)
+            resultsDataFrame.reset_index(inplace = True, drop = True)
+        
+        resultsDataFrame = resultsDataFrame.sort_values(by = ["score"])
+        print("printingReturndataframe")
+        print(resultsDataFrame.head(n=10))
+        resultsDataFrame.to_csv("//home/nick/Documents/morphMarketHognoseMaximizer/finalSnakeResults")
     
     if multiThread == 0:
         driver = webdriver.Firefox()
+        num = 0
         resultsDataFrame = df(columns=("id","maleMorphs","femaleMorphs","children","score","snakeLinks"))
         theId = 1
         # print(maleSnakeDataFrame.head(n=10))
@@ -318,8 +349,31 @@ def main():
         dontGo = 0
         for x in range(len(maleSnakeDataFrame)):
             for y in range(len(femaleSnakeDataFrame)):
-                #dataframe of males that are the same as male in question
-                morphsInQuestion = maleSnakeDataFrame["morphs"].iloc[x]
+                morphsInQuestionM = maleSnakeDataFrame["morphs"].iloc[x]
+                morphsInQuestionM = ast.literal_eval(morphsInQuestionM)
+                morphsInQuestionF = femaleSnakeDataFrame["morphs"].iloc[y]
+                morphsInQuestionF = ast.literal_eval(morphsInQuestionF)
+                resultsDataFrameMorphsM = resultsDataFrame["maleMorphs"]
+                if  len(resultsDataFrame) > 0:
+                    counter = 0
+                    indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM = []
+                    for maleMorphCombo in resultsDataFrameMorphsM:
+                        #print("type of male morph combo" + str(type(maleMorphCombo)))
+                        if maleMorphCombo == morphsInQuestionM:
+                            indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM.append(counter)
+                        counter += 1
+                    #not sure if right
+                    keepIndicies = []
+                    counter = 0
+                    resultsDataFrameMorphsFWhereContainsMorphsInQuestionM = list(resultsDataFrame["femaleMorphs"].iloc[indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM])
+                    for z in resultsDataFrameMorphsFWhereContainsMorphsInQuestionM:
+                        countOfMatchingMorphs = 0
+                        for femaleMorph in morphsInQuestionF:
+                            #if first female morph from morph in question is in list of females matched with males that matched the male in question
+                            if femaleMorph in z:
+                                countOfMatchingMorphs += 1
+                        if countOfMatchingMorphs == len(morphsInQuestionF):
+                            dontGo = 1
                 # print(morphsInQuestion)
                 # print(resultsDataFrame["maleMorphs"])
                 # # data frame where morphs are same as morph in question
@@ -336,12 +390,18 @@ def main():
                 if dontGo == 0:
                     # if not resultDataFrame.empty:
                     #     print("found snakes for that set of parents: " + str(resultDataFrame.head()))
+                    resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs,num)
                     resultsDataFrame = resultsDataFrame.append(resultDataFrame)
                     resultsDataFrame.reset_index(inplace = True, drop = True)
+                    exportResults((resultDataFrame),num)
                     #print(resultsDataFrame.head(n=10))
                     theId += 1
                     print("snake combination number " + str(count) + " out of " + str(finalNumber) + " completed.")
+                    print("completing this snake combo " + str(morphsInQuestionM) + "  " + str(morphsInQuestionF))
                     count += 1
+                if dontGo == 1:
+                    print("------- snake combination number " + str(count) + " out of " + str(finalNumber) + " skipped.")
+                    print("------- skipping this snake combo " + str(morphsInQuestionM) + "  " + str(morphsInQuestionF))
                 dontGo = 0
         resultsDataFrame = resultsDataFrame.sort_values(by = ["score"])
         print("printingReturndataframe")

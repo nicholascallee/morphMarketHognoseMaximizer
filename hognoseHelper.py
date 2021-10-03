@@ -230,6 +230,7 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf,num):
                 if ynTrait != "YN":
                     #print(trait)
                     try:
+                        #grab all snakes with the morph childTraitList[x] from the male dataframe
                         concatThis = [foundMaleSnakesDataFrame,maleDf[maleDf[ynTrait] == True]]
                         foundMaleSnakesDataFrame = pd.concat(concatThis)
                     except KeyError:
@@ -241,19 +242,19 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf,num):
                     if foundMaleSnakesDataFrame.empty:
                         logMe("didnt find the trait: " + str(trait) + " in the male snake instances",num)
                         break
-            #if second or later
-            if x > 0:
-                if childTraitList[x] !='Het':
-                    trait = childTraitList[x]
-                    ynTrait = "YN" + trait
-                    if ynTrait != "YN":
-                        foundMaleSnakesDataFrame.drop(foundMaleSnakesDataFrame.loc[foundMaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
-                        # if not foundMaleSnakesDataFrame.empty:
-                        #     print("still have snakes that match this morph combo " + str(childTraitList))
-                        # else:
-                        if foundMaleSnakesDataFrame.empty:
-                            logMe("checking the trait " +trait+ " removed all the snakes from the subset. no snakes of that type found",num)
-                            break
+        #if second or later
+        if x > 0:
+            trait = childTraitList[x]
+            if trait !='Het':
+                ynTrait = "YN" + trait
+                if ynTrait != "YN":
+                    foundMaleSnakesDataFrame.drop(foundMaleSnakesDataFrame.loc[foundMaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
+                    # if not foundMaleSnakesDataFrame.empty:
+                    #     print("still have snakes that match this morph combo " + str(childTraitList))
+                    # else:
+                    if foundMaleSnakesDataFrame.empty:
+                        logMe("checking the trait " +trait+ " removed all the snakes from the subset. no snakes of that type found",num)
+                        break
     # if not foundMaleSnakesDataFrame.empty:
     #     print("found matches against males for the snake with these traits: " + str(childTraitList ))
     # else:
@@ -296,6 +297,7 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf,num):
         if not foundFemaleSnakesDataFrame.empty:
                 foundSnakesDataFrame = foundMaleSnakesDataFrame.append(foundFemaleSnakesDataFrame, ignore_index = True)
                 count = 0
+                #remove all masked instances
                 for value in foundSnakesDataFrame["morphs"]:
                     if (isinstance(value,float)):
                         if math.isnan(value):
@@ -303,14 +305,15 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf,num):
                     else:
                         count += 1
                 foundSnakesDataFrame.reset_index(inplace = True, drop = True)
-                count = 0
-                for x in foundSnakesDataFrame["morphs"]:
-                    x = ast.literal_eval(x)
-                    if len(x) > len(childTraitList):
-                        foundSnakesDataFrame.drop([count], inplace = True)
-                        foundSnakesDataFrame.reset_index(inplace = True, drop = True)
-                    else:
-                        count += 1
+                # count = 0
+                # #drop the snakes that have more genes than given snake
+                # for x in foundSnakesDataFrame["morphs"]:
+                #     x = ast.literal_eval(x)
+                #     if len(x) > len(childTraitList):
+                #         foundSnakesDataFrame.drop([count], inplace = True)
+                #         foundSnakesDataFrame.reset_index(inplace = True, drop = True)
+                #     else:
+                #         count += 1
                     
                 #foundSnakesDataFrame = foundSnakesDataFrame[]
                 return(foundSnakesDataFrame)
@@ -449,25 +452,12 @@ def logMe(string,processId):
         return True
 
 def exportResults(dataFrame,processId):
-    string = dataFrame[0]
-    if path.exists('/home/nick/Documents/morphMarketHognoseMaximizer/resultsDataFrame' + str(processId)):
-        f = open('/home/nick/Documents/morphMarketHognoseMaximizer/resultsDataFrame' + str(processId), 'a')
-        # create the csv writer
-        writer = csv.writer(f)
-        # write a row to the csv file
-        writer.writerow([string])
-        # close the file
-        f.close()
+    string = dataFrame.iloc[0]
+    if path.exists('resultsDataFrame' + str(processId) + ".csv"):
+        dataFrame.to_csv('resultsDataFrame' + str(processId) + ".csv",mode='a', index=False, header=False)
         return True
     else:
-        # open the file in the write mode
-        f = open('/home/nick/Documents/morphMarketHognoseMaximizer/resultsDataFrame' + str(processId), 'w')
-        # create the csv writer
-        writer = csv.writer(f)
-        # write a row to the csv file
-        writer.writerow([string])
-        # close the file
-        f.close()
+        dataFrame.to_csv('resultsDataFrame' + str(processId)+ ".csv", mode='w',index=False, header=False)
         return True
 
   
