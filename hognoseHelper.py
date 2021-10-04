@@ -248,7 +248,12 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf,num):
             if trait !='Het':
                 ynTrait = "YN" + trait
                 if ynTrait != "YN":
-                    foundMaleSnakesDataFrame.drop(foundMaleSnakesDataFrame.loc[foundMaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
+                    try:
+                        foundMaleSnakesDataFrame.drop(foundMaleSnakesDataFrame.loc[foundMaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
+                    except KeyError:
+                        print(str(ynTrait) + " not found in male stored dataframe")
+                        print("no snakes for that type of morph found")
+                        break
                     # if not foundMaleSnakesDataFrame.empty:
                     #     print("still have snakes that match this morph combo " + str(childTraitList))
                     # else:
@@ -285,7 +290,12 @@ def getAllSnakesWithTheseTraits(childTraitList, maleDf, femaleDf,num):
                 trait = childTraitList[y]
                 ynTrait = "YN" + trait
                 if ynTrait != "YN":
-                    foundFemaleSnakesDataFrame.drop(foundFemaleSnakesDataFrame.loc[foundFemaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
+                    try:
+                        foundFemaleSnakesDataFrame.drop(foundFemaleSnakesDataFrame.loc[foundFemaleSnakesDataFrame[ynTrait]==False].index, inplace=True)
+                    except KeyError:
+                        print(str(ynTrait) + " not found in stored female dataframe")
+                        print("no snakes for that type of morph found")
+                        break
                     # if not foundFemaleSnakesDataFrame.empty:
                     #     print("still have snakes that match this morph combo " + str(childTraitList))
     # if not foundFemaleSnakesDataFrame.empty:
@@ -457,7 +467,7 @@ def exportResults(dataFrame,processId):
         dataFrame.to_csv('resultsDataFrame' + str(processId) + ".csv",mode='a', index=False, header=False)
         return True
     else:
-        dataFrame.to_csv('resultsDataFrame' + str(processId)+ ".csv", mode='w',index=False, header=False)
+        dataFrame.to_csv('resultsDataFrame' + str(processId)+ ".csv", mode='w',columns=("id","maleMorphs","femaleMorphs","children","score","snakeLinks","x","y"), index=False, header=False)
         return True
 
   
@@ -482,7 +492,6 @@ def turnIntoList(x,listOfAllGenes):
             geneHolder = ""
     if geneHolder in listOfAllGenes:
         geneList.append(geneHolder)
-    time.sleep(1)
     return geneList
             
 

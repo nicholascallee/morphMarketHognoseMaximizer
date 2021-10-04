@@ -187,7 +187,7 @@ def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAll
     return returner
     
 
-def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listOfAllMorphs,num):
+def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listOfAllMorphs,num,xVal,yVal):
     #gets all data out of frames and calculates a comparison of snakes then gets combo data with a fn
     for z in range(len(snakeMFrame)):
         maleMorphList = snakeMFrame[z]
@@ -207,7 +207,7 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
         break
     
     
-    delay = 60 # seconds
+    delay = 25 # seconds
     for x in range(4):
         try:
             #goto calculator
@@ -263,11 +263,19 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
             except sce.ElementNotInteractableException:
                 logMe("couldnt input data into the calculator",num)
                 sys.exit()
+        except StaleElementReferenceException:
+            time.sleep(2)
+            try:
+                parentTwoElement.send_keys(femaleMorphList[y])
+                parentTwoElement.send_keys(Keys.TAB)
+            except sce.ElementNotInteractableException:
+                logMe("couldnt input data into the calculator",num)
+                sys.exit()
         
     calculateButtonCssSelector = ".tooltip-wrapper > button:nth-child(1)"
     calculateButtonElement = driver.find_element(By.CSS_SELECTOR,calculateButtonCssSelector)
     calculateButtonElement.click()
-    time.sleep(2)
+    time.sleep(1)
     #check for error page
     while (checkIfElementExistsByCssSelector(driver,"body > h3:nth-child(1)") == True):
         logMe("checking for error page",num)
@@ -279,7 +287,7 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
         logMe("couldnt find the element in the calulation page. trying again",num)
         dontGoFurther = 1
         results = grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAllMorphs,num)
-        d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]]}
+        d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]], "x":[xVal],"y":[yVal]}
         returningDataFrame = df(data = d)
        #print("printing children")
        #print(returningDataFrame["children"].head())
@@ -290,7 +298,7 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
     #print(type(maleDf))
     if dontGoFurther == 0:
         results = grabSnakeComboData(driver,maleDf,femaleDf,calculateButtonElement, listOfAllMorphs,num)
-        d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]]}
+        d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]] , "x":[xVal],"y":[yVal]}
         returningDataFrame = df(data = d)
         return returningDataFrame
 
@@ -302,6 +310,26 @@ def main():
     maleDataFrame, femaleDataFrame = runMeFirst(maleSnakeDataFrame,femaleSnakeDataFrame)
     splits = 1
     
+    #grab resultscsv into df
+    #grab last x and y
+    #set x and y to these values
+    if path.exists('resultsDataFrame' + "0" + ".csv"):
+        resultsDataFrameFinishedWork = pd.read_csv('resultsDataFrame' + "0" + ".csv", names =("id","maleMorphs","femaleMorphs","children","score","snakeLinks","x","y") )
+        lastFinishedInstance = resultsDataFrameFinishedWork.iloc[len(resultsDataFrameFinishedWork) -1]
+        startX = int(lastFinishedInstance["x"])
+        startY = int(lastFinishedInstance["y"] + 1)
+        if startY == len(femaleSnakeDataFrame):
+            startX +=1
+            startY = 0
+        print("starting at: x:" + str(startX) + " and y:" + str(startY))
+        resultsDataFrame = resultsDataFrameFinishedWork
+        count = len(resultsDataFrameFinishedWork)
+    else:
+        startX=0
+        startY=0
+        resultsDataFrame = df(columns=("id","maleMorphs","femaleMorphs","children","score","snakeLinks","x","y"))
+        count = 0
+
     if multiThread == 1:
         #split male and female data frame into 6 different pieces
         #start a proces for each pair of pieces
@@ -313,7 +341,7 @@ def main():
         manager = multiprocessing.Manager()
         return_dict = manager.dict()
         jobs =[]
-        count = 0
+
         for n in range(splits):
             for o in range(splits):
                 ret_value = multiprocessing.Value("d", 0.0, lock=False)
@@ -325,9 +353,8 @@ def main():
             for proc in jobs:
                proc.join()
             print(return_dict.values())
-        resultsDataFrame = df(columns=("id","maleMorphs","femaleMorphs","children","score","snakeLinks"))
-        for x in range(count+1):
-            holderDataFrame = return_dict[x]
+        for l in range(count+1):
+            holderDataFrame = return_dict[l]
             resultsDataFrame = resultsDataFrame.append(holderDataFrame)
             resultsDataFrame.reset_index(inplace = True, drop = True)
         
@@ -339,16 +366,16 @@ def main():
     if multiThread == 0:
         driver = webdriver.Firefox()
         num = 0
-        resultsDataFrame = df(columns=("id","maleMorphs","femaleMorphs","children","score","snakeLinks"))
         theId = 1
         # print(maleSnakeDataFrame.head(n=10))
         # print(femaleSnakeDataFrame.head(n=10))
         listOfAllMorphs = getListOfAllMorphs(maleSnakeDataFrame,femaleSnakeDataFrame)
         finalNumber = float(len(maleSnakeDataFrame) * float(len(femaleSnakeDataFrame)))
-        count = 0
         dontGo = 0
-        for x in range(len(maleSnakeDataFrame)):
-            for y in range(len(femaleSnakeDataFrame)):
+        listOfTimesToCompleteOne = []
+        for x in range(startX,len(maleSnakeDataFrame)):
+            for y in range(startY,len(femaleSnakeDataFrame)):
+                start = time.time()
                 morphsInQuestionM = maleSnakeDataFrame["morphs"].iloc[x]
                 morphsInQuestionM = ast.literal_eval(morphsInQuestionM)
                 morphsInQuestionF = femaleSnakeDataFrame["morphs"].iloc[y]
@@ -390,7 +417,7 @@ def main():
                 if dontGo == 0:
                     # if not resultDataFrame.empty:
                     #     print("found snakes for that set of parents: " + str(resultDataFrame.head()))
-                    resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs,num)
+                    resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs,num,x,y)
                     resultsDataFrame = resultsDataFrame.append(resultDataFrame)
                     resultsDataFrame.reset_index(inplace = True, drop = True)
                     exportResults((resultDataFrame),num)
@@ -402,7 +429,19 @@ def main():
                 if dontGo == 1:
                     print("------- snake combination number " + str(count) + " out of " + str(finalNumber) + " skipped.")
                     print("------- skipping this snake combo " + str(morphsInQuestionM) + "  " + str(morphsInQuestionF))
+                    count += 1
                 dontGo = 0
+                
+                stop = time.time()
+                timeToCompleteOne = float(stop - start)
+                listOfTimesToCompleteOne.append(timeToCompleteOne)
+                adder = 0
+                for thisTime in listOfTimesToCompleteOne:
+                    adder += thisTime
+                adder = adder / float(len(listOfTimesToCompleteOne))
+                print("avg time to complete 1 snake in seconds: " + str(adder))
+                print("estimated time to complete the rest of the snakes: in hours: " + str(round(adder*(finalNumber - int(len(resultsDataFrame)))/60/60,1)))
+                
         resultsDataFrame = resultsDataFrame.sort_values(by = ["score"])
         print("printingReturndataframe")
         print(resultsDataFrame.head(n=10))
