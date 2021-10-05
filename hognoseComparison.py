@@ -30,10 +30,14 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-def spawn(num, return_dict, maleSnakeDataFrame, femaleSnakeDataFrame, maleDataFrame, femaleDataFrame):
+def spawn(num, return_dict, maleSnakeDataFrame, femaleSnakeDataFrame, maleDataFrame, femaleDataFrame, xStart, yStart):
     print("starting process: " + str(num))
+    
+    #stopHere = time.time()
+    #print("time to look for already done snakes in seconds: " + str(round(stopHere - start, 1)))
 
     driver = webdriver.Firefox()
+    driver.implicitly_wait(15);
     resultsDataFrame = df(columns=("id","maleMorphs","femaleMorphs","children","score","snakeLinks"))
     theId = 1
     # print(maleSnakeDataFrame.head(n=10))
@@ -42,27 +46,39 @@ def spawn(num, return_dict, maleSnakeDataFrame, femaleSnakeDataFrame, maleDataFr
     finalNumber = float(len(maleSnakeDataFrame) * float(len(femaleSnakeDataFrame)))
     count = 0
     dontGo = 0
-    for x in range(len(maleSnakeDataFrame)):
-        for y in range(len(femaleSnakeDataFrame)):
+    for x in range(xStart, len(maleSnakeDataFrame)):
+        for y in range(yStart, len(femaleSnakeDataFrame)):
             #dataframe of males that are the same as male in question
-            morphsInQuestionM = list(maleSnakeDataFrame["morphs"].iloc[x])
-            morphsInQuestionF = list(femaleSnakeDataFrame["morphs"].iloc[y])
-            resultsDataFrameMorphsm = list(resultsDataFrame["maleMorphs"])
-            counter = 0
-            indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM = []
-            for maleMorphCombo in resultsDataFrameMorphsM:
-                #print("type of male morph combo" + str(type(maleMorphCombo)))
-                if maleMorphCombo == morphsInQuestionM:
-                    indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM.append(counter)
-                counter+= 1
-            
-            resultsDataFrameMorphsFWhereContainsMorphsInQuestionM = list(resultsDataFrame["femaleMorphs"].iloc[indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM])
-            if len(resultsDataFrameMorphsFWhereContainsMorphsInQuestionM) > 0:
-                dontGo = 1
+            start = time.time()
+            morphsInQuestionM = maleSnakeDataFrame["morphs"].iloc[x]
+            morphsInQuestionM = ast.literal_eval(morphsInQuestionM)
+            morphsInQuestionF = femaleSnakeDataFrame["morphs"].iloc[y]
+            morphsInQuestionF = ast.literal_eval(morphsInQuestionF)
+            resultsDataFrameMorphsM = resultsDataFrame["maleMorphs"]
+            if  len(resultsDataFrame) > 0:
+                counter = 0
+                indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM = []
+                for maleMorphCombo in resultsDataFrameMorphsM:
+                    #print("type of male morph combo" + str(type(maleMorphCombo)))
+                    if maleMorphCombo == morphsInQuestionM:
+                        indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM.append(counter)
+                    counter += 1
+                #not sure if right
+                keepIndicies = []
+                counter = 0
+                resultsDataFrameMorphsFWhereContainsMorphsInQuestionM = list(resultsDataFrame["femaleMorphs"].iloc[indexesOfWhereMaleMorphComboIsSameAsMorphsInQuestionM])
+                for z in resultsDataFrameMorphsFWhereContainsMorphsInQuestionM:
+                    countOfMatchingMorphs = 0
+                    for femaleMorph in morphsInQuestionF:
+                        #if first female morph from morph in question is in list of females matched with males that matched the male in question
+                        if femaleMorph in z:
+                            countOfMatchingMorphs += 1
+                    if countOfMatchingMorphs == len(morphsInQuestionF):
+                        dontGo = 1
             #     #get all the instances with that male
             if dontGo == 0:
                 #print(maleSnakeDataFrame.iloc[x])
-                resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs,num)
+                resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs,num,x,y,1)
                 try:
                     print("exporting results")
                     logMe(resultDataFrame[0],num)
@@ -76,11 +92,23 @@ def spawn(num, return_dict, maleSnakeDataFrame, femaleSnakeDataFrame, maleDataFr
                 #print(resultsDataFrame.head(n=10))
                 theId += 1
                 logMe("snake combination number " + str(count) + " out of " + str(finalNumber) + " completed.",num)
+                print("completing this snake combo " + str(morphsInQuestionM) + "  " + str(morphsInQuestionF))
                 count += 1
             dontGo = 0
+            stop = time.time()
+            timeToCompleteOne = float(stop - start)
+            listOfTimesToCompleteOne.append(timeToCompleteOne)
+            adder = 0
+            for thisTime in listOfTimesToCompleteOne:
+                adder += thisTime
+            adder = adder / float(len(listOfTimesToCompleteOne))
+            print("avg time to complete 1 snake in seconds: " + str(adder))
+            print("estimated time to complete the rest of the snakes: in hours: " + str(round(adder*(finalNumber - int(len(resultsDataFrame)))/60/60,1)))
+            
         resultsDataFrame = resultsDataFrame.sort_values(by = ["score"])
         logMe("printingReturndataframe",num)    
         logMe(resultsDataFrame.head(n=10),num)
+        print("setting process:" + str(num) + " equal to resultsDataFrame")
         return_dict[num] = resultsDataFrame
      
 
@@ -114,7 +142,7 @@ def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAll
     except:
         logMe("couldnt get likelieness list. trying again",num)
         for x in range(5):
-            delay = 60 # seconds
+            delay = 5# seconds
             try:
                 #if (checkIfElementExistsByCssSelector("body > h3:nth-child(1)")):
                 time.sleep(2)
@@ -128,8 +156,10 @@ def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAll
         try: 
             logMe("likelienessElementList[0]" + str(likelinessElementList[0].text),num)
         except:
+            print("couldnt get likelieness list at all")
             logMe("couldnt get likelieness list at all",num)
-            sys.exit()
+            print("restarting program")
+            main()
     #print(likelienessElementList)
     #fix elements to fit whats needed next
     fixedLikelienessList  = fixLikelienessElementList(likelienessElementList)
@@ -187,39 +217,64 @@ def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAll
     return returner
     
 
-def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listOfAllMorphs,num,xVal,yVal):
-    #gets all data out of frames and calculates a comparison of snakes then gets combo data with a fn
-    for z in range(len(snakeMFrame)):
-        maleMorphList = snakeMFrame[z]
-        maleMorphList = maleMorphList.split(",")
-        for x in range(len(maleMorphList)):
-            maleMorphList[x] = maleMorphList[x].replace("[","").replace("]","").replace("'","").replace("100%","").replace("Pos ","")
-        maleCost = snakeMFrame[z+1]
-        maleLink = snakeMFrame[z+2]
-        break
-    for a in range(len(snakeFFrame)):
-        femaleMorphList = snakeFFrame[a]
-        femaleMorphList = femaleMorphList.split(",")
-        for x in range(len(femaleMorphList)):
-            femaleMorphList[x] = femaleMorphList[x].replace("[","").replace("]","").replace("'","").replace("100%","").replace("Pos ","")
-        femaleCost = snakeFFrame[a+1]
-        femaleLink = snakeFFrame[a+2]
-        break
-    
-    
-    delay = 25 # seconds
-    for x in range(4):
-        try:
-            #goto calculator
-            driver.get("https://www.morphmarket.com/c/reptiles/colubrids/western-hognose/genetic-calculator/")
-            myElem = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.trait-input-wrapper:nth-child(1) > input:nth-child(2)")))
-            logMe("Page is ready!",num)
+def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listOfAllMorphs,num,xVal,yVal,multithreadingOrNo):
+    if multithreadingOrNo == 0:
+        #gets all data out of frames and calculates a comparison of snakes then gets combo data with a fn
+        for z in range(len(snakeMFrame)):
+            maleMorphList = snakeMFrame[z]
+            maleMorphList = maleMorphList.split(",")
+            for x in range(len(maleMorphList)):
+                maleMorphList[x] = maleMorphList[x].replace("[","").replace("]","").replace("'","").replace("100%","").replace("Pos ","")
+            maleCost = snakeMFrame[z+1]
+            maleLink = snakeMFrame[z+2]
             break
-        except TimeoutException:
-            logMe("Loading took too much time!",num)
-            if x == 3:
-                driver.close()
-                sys.exit()
+        for a in range(len(snakeFFrame)):
+            femaleMorphList = snakeFFrame[a]
+            femaleMorphList = femaleMorphList.split(",")
+            for x in range(len(femaleMorphList)):
+                femaleMorphList[x] = femaleMorphList[x].replace("[","").replace("]","").replace("'","").replace("100%","").replace("Pos ","")
+            femaleCost = snakeFFrame[a+1]
+            femaleLink = snakeFFrame[a+2]
+            break
+    else:
+        #gets all data out of frames and calculates a comparison of snakes then gets combo data with a fn
+        for z in range(len(snakeMFrame)):
+            maleMorphList = snakeMFrame[z+1]
+            maleMorphList = maleMorphList.split(",")
+            for x in range(len(maleMorphList)):
+                maleMorphList[x] = maleMorphList[x].replace("[","").replace("]","").replace("'","").replace("100%","").replace("Pos ","")
+            maleCost = snakeMFrame[z+2]
+            maleLink = snakeMFrame[z+3]
+            break
+        for a in range(len(snakeFFrame)):
+            femaleMorphList = snakeFFrame[a]
+            femaleMorphList = femaleMorphList.split(",")
+            for x in range(len(femaleMorphList)):
+                femaleMorphList[x] = femaleMorphList[x].replace("[","").replace("]","").replace("'","").replace("100%","").replace("Pos ","")
+            femaleCost = snakeFFrame[a+1]
+            femaleLink = snakeFFrame[a+2]
+            break
+    
+    # delay = 5# seconds
+    # for x in range(4):
+    #     try:
+    #         #goto calculator
+    #         startHere = time.time()
+    #         driver.get("https://www.morphmarket.com/c/reptiles/colubrids/western-hognose/genetic-calculator/")
+    #         myElem = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.trait-input-wrapper:nth-child(1) > input:nth-child(2)")))
+    #         logMe("Page is ready!",num)
+    #         stopHere = time.time()
+    #         print("page is ready. Took :" + str(round(stopHere - startHere)) + " seconds.")
+    #         break
+    #     except TimeoutException:
+    #         logMe("Loading took too much time!",num)
+    #         if x == 3:
+    #             print("taking wayyyyyyyy to long")
+    
+    try:
+        driver.get("https://www.morphmarket.com/c/reptiles/colubrids/western-hognose/genetic-calculator/")
+    except TimeoutException:
+        print("getting calulation page timed out")
     parentOneElement = driver.find_element(By.CSS_SELECTOR, "div.trait-input-wrapper:nth-child(1) > input:nth-child(2)")
     
     for x in range (len(maleMorphList)):
@@ -239,8 +294,11 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
                 time.sleep(.1)
                 parentOneElement.send_keys(Keys.TAB)
             except sce.ElementNotInteractableException:
+                print("couldnt input data into the calculator")
                 logMe("couldnt input data into the calculator",num)
-                sys.exit()
+                print("restarting program.")
+                driver.close()
+                main()
     parentTwoElement = driver.find_element(By.CSS_SELECTOR, "div.trait-input-wrapper:nth-child(3) > input:nth-child(2)")
     for y in range (len(femaleMorphList)):
         femaleMorphList[y]  = femaleMorphList[y].replace("66% ","").replace("100% ","").replace("50% ","")
@@ -262,7 +320,10 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
                 parentTwoElement.send_keys(Keys.TAB)
             except sce.ElementNotInteractableException:
                 logMe("couldnt input data into the calculator",num)
-                sys.exit()
+                print("couldnt input data into the calculator")
+                print("restarting program.")
+                driver.close()
+                main()
         except StaleElementReferenceException:
             time.sleep(2)
             try:
@@ -270,17 +331,24 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
                 parentTwoElement.send_keys(Keys.TAB)
             except sce.ElementNotInteractableException:
                 logMe("couldnt input data into the calculator",num)
-                sys.exit()
+                print("couldnt input data into the calculator")
+                print("restarting program.")
+                driver.close()
+                main()
         
     calculateButtonCssSelector = ".tooltip-wrapper > button:nth-child(1)"
     calculateButtonElement = driver.find_element(By.CSS_SELECTOR,calculateButtonCssSelector)
     calculateButtonElement.click()
     time.sleep(1)
     #check for error page
+    checker1 = 0
     while (checkIfElementExistsByCssSelector(driver,"body > h3:nth-child(1)") == True):
         logMe("checking for error page",num)
         time.sleep(2)
         driver.refresh()
+        if checker1 > 5:
+            print("taking forever")
+        checker1 += 1
     
     dontGoFurther = 0
     while(checkIfElementExistsByCssSelector(driver,".tablesorter-headerRow") == False):
@@ -308,7 +376,8 @@ def main():
     maleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportm', names = ["morphs","cost","link"])
     femaleSnakeDataFrame = pd.read_csv('//home/nick/Documents/morphMarketHognoseMaximizer/snakeExportf', names = ["morphs","cost","link"])
     maleDataFrame, femaleDataFrame = runMeFirst(maleSnakeDataFrame,femaleSnakeDataFrame)
-    splits = 1
+    splits = 2
+    splits += 1
     
     #grab resultscsv into df
     #grab last x and y
@@ -337,23 +406,42 @@ def main():
         #when all processes are finished, grab all 6 returning dataframes and combine them
         #export
         slicesOfMaleDataFrame = np.array_split(maleDataFrame,splits)
-        slicesOfFemaleDataFrame = np.array_split(femaleDataFrame,splits)
         manager = multiprocessing.Manager()
         return_dict = manager.dict()
         jobs =[]
+        pId = 0
+        
+        #start thread 0 at startX
+        #start thread 1 and on at 
 
+        amtOfMalesLeft = len(maleSnakeDataFrame) - 1 - startX
+        itterator = int(round(amtOfMalesLeft / splits))
+        
         for n in range(splits):
-            for o in range(splits):
+            if n == 0:
+                startProcessX = startX
+            if n == 1:
+                startProcessX = startX  + itterator
+                startY = 0
+            else:
+                startProcessX = startProcessX + itterator
+                startY = 0
+            
+            if n < splits - 1:
+                print("starting process " + str(n) + " at x:" + str(startProcessX) + " and y:" + str(startY))
                 ret_value = multiprocessing.Value("d", 0.0, lock=False)
-                p = multiprocessing.Process(target=spawn, args=[count, return_dict, slicesOfMaleDataFrame[n], slicesOfFemaleDataFrame[o], maleSnakeDataFrame, femaleSnakeDataFrame])
+                p = multiprocessing.Process(target=spawn, args=[pId, return_dict, slicesOfMaleDataFrame[n], femaleSnakeDataFrame, maleSnakeDataFrame, femaleSnakeDataFrame,startProcessX,startY])
                 p.start()
                 jobs.append(p)
                 count += 1
-            
-            for proc in jobs:
-               proc.join()
-            print(return_dict.values())
+                pId += 1
+        
+        for proc in jobs:
+            print(proc)
+            proc.join()
+        print(return_dict.values())
         for l in range(count+1):
+            print("process " + str(pId) + " l " + str(l))
             holderDataFrame = return_dict[l]
             resultsDataFrame = resultsDataFrame.append(holderDataFrame)
             resultsDataFrame.reset_index(inplace = True, drop = True)
@@ -365,6 +453,7 @@ def main():
     
     if multiThread == 0:
         driver = webdriver.Firefox()
+        driver.implicitly_wait(15)
         num = 0
         theId = 1
         # print(maleSnakeDataFrame.head(n=10))
@@ -401,23 +490,12 @@ def main():
                                 countOfMatchingMorphs += 1
                         if countOfMatchingMorphs == len(morphsInQuestionF):
                             dontGo = 1
-                # print(morphsInQuestion)
-                # print(resultsDataFrame["maleMorphs"])
-                # # data frame where morphs are same as morph in question
-                # checkerMaleDataFrame= resultsDataFrame[resultsDataFrame["maleMorphs"].str.contains(morphsInQuestion)]
-                # print(checkerMaleDataFrame)
-                # checkerMaleDataFrame = pd.DataFrame(checkerMaleDataFrame)
-                # if not checkerMaleDataFrame.empty:
-                #     # if frame of containing the dad also contains this mom then dont compare
-                #     checkerFemaleDataFrame = checkerMaleDataFrame["femaleMorphs"].str.contains(femaleSnakeDataFrame.iloc[y])
-                #     realDf2 = pd.DataFrame(checkerFemaleDataFrame)
-                #     if not realDf2.empty():
-                #         dontGo = 1
-                #     #get all the instances with that male
+                stopHere = time.time()
+                print("time to look for already done snakes in seconds: " + str(round(stopHere - start, 1)))
                 if dontGo == 0:
                     # if not resultDataFrame.empty:
                     #     print("found snakes for that set of parents: " + str(resultDataFrame.head()))
-                    resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs,num,x,y)
+                    resultDataFrame = compareSnakes(driver, maleSnakeDataFrame.iloc[x],femaleSnakeDataFrame.iloc[y],theId,maleDataFrame,femaleDataFrame,listOfAllMorphs,num,x,y,0)
                     resultsDataFrame = resultsDataFrame.append(resultDataFrame)
                     resultsDataFrame.reset_index(inplace = True, drop = True)
                     exportResults((resultDataFrame),num)
