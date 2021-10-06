@@ -114,21 +114,30 @@ def spawn(num, return_dict, maleSnakeDataFrame, femaleSnakeDataFrame, maleDataFr
 
 
 def findAvgPriceOfSnake(driver,snake, maleDf, femaleDf, num):
+    findAvgPriceOfSnakeStart = time.time()
     #instead of trying to load a fuck ton of pages, just look in the list of snakes we already made dumbass
     #print("in find avg price of snake" + str(type(snake)))
     snakesWithTheseParticularTraits = getAllSnakesWithTheseTraits(snake, maleDf, femaleDf,num)
     if isinstance(snakesWithTheseParticularTraits,int):
         if snakesWithTheseParticularTraits == 0:
+            findAvgPriceOfSnakesStop = time.time()
+            findAvgPriceOfSnakesTimeToRun = findAvgPriceOfSnakesStop - findAvgPriceOfSnakeStart
+            print("find avg price of snakes time to run: " + str(findAvgPriceOfSnakesTimeToRun))
             return 0
     else:
         pricesOfSpecificSnake = snakesWithTheseParticularTraits["cost"]
         #print("this is the cost of the snakes found in a list: " + str(pricesOfSpecificSnake))
         avg = averageSnakePrices(pricesOfSpecificSnake)
+        findAvgPriceOfSnakesStop = time.time()
+        findAvgPriceOfSnakesTimeToRun = findAvgPriceOfSnakesStop - findAvgPriceOfSnakeStart
+        print("find avg price of snakes time to run: " + str(findAvgPriceOfSnakesTimeToRun))
         return avg
 
 
 
+
 def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAllMorphs,num):
+    grabSnakeComboDataStart = time.time()
     returner = []
     #snakeChildren = [likelieness morph avg price]
     snakeChildren = []
@@ -214,10 +223,14 @@ def grabSnakeComboData(driver, maleDf,femaleDf,calculateButtonElement, listOfAll
                     logMe("looked through snake with these genes: " +str(genes) + " and found no results",num)
 
     returner = [perfectGenesList,weightedTotalReturn] 
+    grabSnakeComboDataStop = time.time()
+    grabSnakeComboDataTimeToRun = grabSnakeComboDataStop - grabSnakeComboDataStart
+    print("grabsnakecombodata time to run: " + str(grabSnakeComboDataTimeToRun))
     return returner
     
 
 def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listOfAllMorphs,num,xVal,yVal,multithreadingOrNo):
+    compareSnakesStart = time.time()
     if multithreadingOrNo == 0:
         #gets all data out of frames and calculates a comparison of snakes then gets combo data with a fn
         for z in range(len(snakeMFrame)):
@@ -270,7 +283,7 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
     #         logMe("Loading took too much time!",num)
     #         if x == 3:
     #             print("taking wayyyyyyyy to long")
-    
+    grabSnakeComboDataSubsetStart = time.time()
     try:
         driver.get("https://www.morphmarket.com/c/reptiles/colubrids/western-hognose/genetic-calculator/")
     except TimeoutException:
@@ -280,7 +293,7 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
     for x in range (len(maleMorphList)):
         maleMorphList[x] = maleMorphList[x].replace("66% ","").replace("100% ","").replace("50% ","")
         logMe("sending: " + str(maleMorphList[x]) + " into parent 1 text box",num)
-        if maleMorphList[x][0] == " ":
+        if maleMorphList[x] == '':
             maleMorphList[x] = maleMorphList[x][1:]
         #print("parent 1 "  + "morph number :"+ str(x) + " " + str(maleMorphList[x]))
         try:
@@ -338,7 +351,13 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
         
     calculateButtonCssSelector = ".tooltip-wrapper > button:nth-child(1)"
     calculateButtonElement = driver.find_element(By.CSS_SELECTOR,calculateButtonCssSelector)
-    calculateButtonElement.click()
+    try:
+        calculateButtonElement.click()
+    except:
+        print("timed out at calculateButtonElement.click()")
+        driver.close()
+        print("calling main")
+        main()
     time.sleep(1)
     #check for error page
     checker1 = 0
@@ -351,6 +370,9 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
         checker1 += 1
     
     dontGoFurther = 0
+    grabSnakeComboDataSubsetStop = time.time()
+    grabSnakeComboDataSubsetTimeToRun =  grabSnakeComboDataSubsetStop -  grabSnakeComboDataSubsetStart
+    print("grab snake combo SUBSET ----- time to run: " + str(grabSnakeComboDataSubsetTimeToRun))
     while(checkIfElementExistsByCssSelector(driver,".tablesorter-headerRow") == False):
         logMe("couldnt find the element in the calulation page. trying again",num)
         dontGoFurther = 1
@@ -360,15 +382,22 @@ def compareSnakes(driver,snakeMFrame, snakeFFrame, myId, maleDf, femaleDf, listO
        #print("printing children")
        #print(returningDataFrame["children"].head())
        #print("returning returningDataFrame from compare snakes")
+        compareSnakesStop = time.time()
+        compareSnakesTimeToRun = compareSnakesStop - compareSnakesStart
+        print("compare snakes time to run: " + str(compareSnakesTimeToRun))
         return returningDataFrame
-
+    
     #print("calling grabSnakeComboData")
     #print(type(maleDf))
     if dontGoFurther == 0:
         results = grabSnakeComboData(driver,maleDf,femaleDf,calculateButtonElement, listOfAllMorphs,num)
         d = {'id': [myId], 'maleMorphs': [maleMorphList], 'femaleMorphs': [femaleMorphList], 'children': [results[0]], 'score': [results[1]], 'snakeLinks':[[maleLink, femaleLink]] , "x":[xVal],"y":[yVal]}
         returningDataFrame = df(data = d)
+        compareSnakesStop = time.time()
+        compareSnakesTimeToRun = compareSnakesStop - compareSnakesStart
+        print("compare snakes time to run: " + str(compareSnakesTimeToRun))
         return returningDataFrame
+    
 
 
 def main():
